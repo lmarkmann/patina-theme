@@ -45,6 +45,7 @@ ext install LuisCMarkmann.patina-theme
 | [Ghostty](https://ghostty.org/) | `ghostty/` | Copy to `~/.config/ghostty/themes/` |
 | [Kitty](https://sw.kovidgoyal.net/kitty/) | `kitty/` | `include` in `~/.config/kitty/kitty.conf` |
 | [WezTerm](https://wezfurlong.org/wezterm/) | `wezterm/` | Copy to `~/.config/wezterm/colors/` |
+| [Zed](https://zed.dev/) | `zed/` | Copy to `~/.config/zed/themes/` |
 
 ## License
 
