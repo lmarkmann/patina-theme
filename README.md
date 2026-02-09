@@ -26,7 +26,7 @@ A warm, muted color theme inspired by oxidized copper. Teal verdigris meets ambe
 Search for **Patina** in the VS Code Extensions panel, or:
 
 ```
-ext install lmarkmann.patina-theme
+ext install LuisCMarkmann.patina-theme
 ```
 
 ## Recommended pairings
