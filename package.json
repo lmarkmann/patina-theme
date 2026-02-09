@@ -1,0 +1,52 @@
+{
+  "name": "patina-theme",
+  "displayName": "Patina",
+  "description": "A warm, muted theme with earthy tones. Teal oxidation and amber warmth. Includes Dark, Dark Soft, Light, and Stellar variants",
+  "version": "0.9.0",
+  "publisher": "lmarkmann",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lmarkmann/patina-theme"
+  },
+  "icon": "icon.png",
+  "engines": {
+    "vscode": "^1.60.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "dark",
+    "light",
+    "theme",
+    "patina",
+    "warm",
+    "muted",
+    "earthy"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Patina Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/patina-dark.json"
+      },
+      {
+        "label": "Patina Dark Soft",
+        "uiTheme": "vs-dark",
+        "path": "./themes/patina-dark-soft.json"
+      },
+      {
+        "label": "Patina Light",
+        "uiTheme": "vs",
+        "path": "./themes/patina-light.json"
+      },
+      {
+        "label": "Patina Stellar",
+        "uiTheme": "vs",
+        "path": "./themes/patina-stellar.json"
+      }
+    ]
+  }
+}
