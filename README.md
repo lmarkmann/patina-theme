@@ -36,7 +36,15 @@ ext install LuisCMarkmann.patina-theme
 
 ## Also available for
 
-- [Helix](https://helix-editor.com/) (drop `patina_dark.toml` / `patina_dark_soft.toml` into `~/.config/helix/themes/`)
+| Editor / Terminal | Files | Install |
+| --- | --- | --- |
+| [Helix](https://helix-editor.com/) | `helix/` | Copy to `~/.config/helix/themes/` |
+| [Neovim](https://neovim.io/) | `neovim/colors/` | Copy to `~/.config/nvim/colors/` |
+| [IntelliJ](https://www.jetbrains.com/) | `intellij/` | Import via Settings > Editor > Color Scheme |
+| [Alacritty](https://alacritty.org/) | `alacritty/` | Import in `~/.config/alacritty/alacritty.toml` |
+| [Ghostty](https://ghostty.org/) | `ghostty/` | Copy to `~/.config/ghostty/themes/` |
+| [Kitty](https://sw.kovidgoyal.net/kitty/) | `kitty/` | `include` in `~/.config/kitty/kitty.conf` |
+| [WezTerm](https://wezfurlong.org/wezterm/) | `wezterm/` | Copy to `~/.config/wezterm/colors/` |
 
 ## License
 

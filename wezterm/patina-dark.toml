@@ -1,0 +1,37 @@
+# Patina Dark theme for WezTerm
+
+[metadata]
+name = "Patina Dark"
+
+[colors]
+foreground = "#dbd7ca"
+background = "#121212"
+
+cursor_fg = "#121212"
+cursor_bg = "#dbd7ca"
+cursor_border = "#dbd7ca"
+
+selection_fg = "#dbd7ca"
+selection_bg = "#42403d"
+
+ansi = [
+  "#2e2e2e",  # black
+  "#cb7676",  # red
+  "#4d9375",  # green
+  "#e6cc77",  # yellow
+  "#6db3c2",  # blue
+  "#c98a7d",  # magenta
+  "#5da9a7",  # cyan
+  "#dbd7ca",  # white
+]
+
+brights = [
+  "#585858",  # bright black
+  "#cb7676",  # bright red
+  "#4d9375",  # bright green
+  "#e6cc77",  # bright yellow
+  "#6db3c2",  # bright blue
+  "#c98a7d",  # bright magenta
+  "#5da9a7",  # bright cyan
+  "#dbd7ca",  # bright white
+]
