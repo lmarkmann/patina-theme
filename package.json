@@ -2,8 +2,8 @@
   "name": "patina-theme",
   "displayName": "Patina",
   "description": "A warm, muted theme with earthy tones. Teal oxidation and amber warmth. Includes Dark, Dark Soft, Light, and Stellar variants",
-  "version": "0.9.0",
-  "publisher": "LuisCMarkmann",
+  "version": "1.0.0",
+  "publisher": "lmarkmann",
   "license": "MIT",
   "repository": {
     "type": "git",
