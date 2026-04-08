@@ -2,9 +2,9 @@
 
 A warm, muted color theme inspired by oxidized copper. Teal verdigris meets amber warmth on deep, quiet backgrounds.
 
-![Patina Preview](./preview.gif)
+![Patina Preview](./assets/preview.gif)
 
-![Patina Dark](./screenshots/patina-dark.png)
+![Patina Dark](./assets/patina-dark.png)
 
 ## Variants
 
@@ -17,9 +17,9 @@ A warm, muted color theme inspired by oxidized copper. Teal verdigris meets ambe
 
 ## Syntax Highlighting
 
-![Patina Python](./screenshot-python.png)
+![Patina Python](./assets/screenshot-python.png)
 
-![Patina Rust](./screenshot-rust.png)
+![Patina Rust](./assets/screenshot-rust.png)
 
 ## Install
 
@@ -38,14 +38,9 @@ ext install LuisCMarkmann.patina-theme
 
 | Editor / Terminal | Files | Install |
 | --- | --- | --- |
-| [Helix](https://helix-editor.com/) | `helix/` | Copy to `~/.config/helix/themes/` |
-| [Neovim](https://neovim.io/) | `neovim/colors/` | Copy to `~/.config/nvim/colors/` |
-| [IntelliJ](https://www.jetbrains.com/) | `intellij/` | Import via Settings > Editor > Color Scheme |
-| [Alacritty](https://alacritty.org/) | `alacritty/` | Import in `~/.config/alacritty/alacritty.toml` |
-| [Ghostty](https://ghostty.org/) | `ghostty/` | Copy to `~/.config/ghostty/themes/` |
-| [Kitty](https://sw.kovidgoyal.net/kitty/) | `kitty/` | `include` in `~/.config/kitty/kitty.conf` |
-| [WezTerm](https://wezfurlong.org/wezterm/) | `wezterm/` | Copy to `~/.config/wezterm/colors/` |
-| [Zed](https://zed.dev/) | `zed/` | Copy to `~/.config/zed/themes/` |
+| [Helix](https://helix-editor.com/) | `helix-editor/` | Copy to `~/.config/helix/themes/` |
+| [Alacritty](https://alacritty.org/) | `terminals/alacritty/` | Import in `~/.config/alacritty/alacritty.toml` |
+| [Kitty](https://sw.kovidgoyal.net/kitty/) | `terminals/kitty/` | `include` in `~/.config/kitty/kitty.conf` |
 
 ## License
 

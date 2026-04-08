@@ -9,7 +9,7 @@
     "type": "git",
     "url": "https://github.com/lmarkmann/patina-theme"
   },
-  "icon": "icon.png",
+  "icon": "assets/icon.png",
   "engines": {
     "vscode": "^1.60.0"
   },
@@ -30,22 +30,22 @@
       {
         "label": "Patina Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/patina-dark.json"
+        "path": "./vscode/patina-dark.json"
       },
       {
         "label": "Patina Dark Soft",
         "uiTheme": "vs-dark",
-        "path": "./themes/patina-dark-soft.json"
+        "path": "./vscode/patina-dark-soft.json"
       },
       {
         "label": "Patina Light",
         "uiTheme": "vs",
-        "path": "./themes/patina-light.json"
+        "path": "./vscode/patina-light.json"
       },
       {
         "label": "Patina Stellar",
         "uiTheme": "vs",
-        "path": "./themes/patina-stellar.json"
+        "path": "./vscode/patina-stellar.json"
       }
     ]
   }

@@ -1,0 +1,33 @@
+# Patina Stellar theme for Alacritty
+
+[colors.primary]
+background = "#f5f2ed"
+foreground = "#2e2a24"
+
+[colors.cursor]
+text = "#f5f2ed"
+cursor = "#2e2a24"
+
+[colors.selection]
+text = "#2e2a24"
+background = "#dbd5c5"
+
+[colors.normal]
+black = "#2e2a24"
+red = "#a84040"
+green = "#3a7055"
+yellow = "#9a7c20"
+blue = "#3a7a8a"
+magenta = "#8a5a50"
+cyan = "#3a7a78"
+white = "#5a5248"
+
+[colors.bright]
+black = "#6a6258"
+red = "#cb7676"
+green = "#4d9375"
+yellow = "#e6cc77"
+blue = "#6db3c2"
+magenta = "#c98a7d"
+cyan = "#5da9a7"
+white = "#dbd7ca"
