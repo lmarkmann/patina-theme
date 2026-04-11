@@ -1,0 +1,7 @@
+.git/**
+.claude/**
+.gitignore
+.vscodeignore
+generate.py
+helix-editor/**
+terminals/**
