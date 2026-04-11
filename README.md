@@ -4,8 +4,6 @@ A warm, muted color theme inspired by oxidized copper. Teal verdigris meets ambe
 
 ![Patina Preview](./assets/preview.gif)
 
-![Patina Dark](./assets/patina-dark.png)
-
 ## Variants
 
 | Variant              | Background | Character                          |
