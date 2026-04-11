@@ -2,7 +2,7 @@
 
 A warm, muted color theme inspired by oxidized copper. Teal verdigris meets amber warmth on deep, quiet backgrounds.
 
-![Patina Preview](./assets/preview.gif)
+![Patina Rust](./assets/screenshot-rust.png)
 
 ## Variants
 
@@ -14,12 +14,6 @@ A warm, muted color theme inspired by oxidized copper. Teal verdigris meets ambe
 | **Patina Stellar**   | `#f5f2ed`  | Bright, airy                       |
 
 Patina Dark, Light, and Stellar pass WCAG AA contrast (4.5:1) on every syntax token except `markup.ignored`, which is intentionally blended with the background. Patina Dark Soft intentionally softens four tokens slightly below strict AA for reduced eye strain during long sessions.
-
-## Syntax Highlighting
-
-![Patina Python](./assets/screenshot-python.png)
-
-![Patina Rust](./assets/screenshot-rust.png)
 
 ## Install
 
