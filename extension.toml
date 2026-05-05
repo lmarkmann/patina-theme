@@ -1,6 +1,6 @@
 id = "patina"
 name = "Patina"
-version = "1.2.0"
+version = "1.2.1"
 schema_version = 1
 authors = ["Luis Markmann"]
 description = "Warm, muted theme with earthy tones. Teal oxidation and amber warmth. Includes Dark, Dark Soft, Light, and Stellar variants."
