@@ -4,4 +4,10 @@
 .vscodeignore
 generate.py
 helix-editor/**
+iterm2-color-schemes/**
+.github/**
+extension.toml
+themes/**
 terminals/**
+zed/**
+contrib/**

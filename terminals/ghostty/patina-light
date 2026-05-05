@@ -1,0 +1,25 @@
+# Patina Light theme for Ghostty
+
+palette = 0=#2e2a24
+palette = 1=#9b3b3b
+palette = 2=#34644c
+palette = 3=#6e5817
+palette = 4=#2f626f
+palette = 5=#7a4f47
+palette = 6=#2e6260
+palette = 7=#5a5248
+palette = 8=#6a6258
+palette = 9=#b64747
+palette = 10=#3d764c
+palette = 11=#81651a
+palette = 12=#3a7280
+palette = 13=#8e5b51
+palette = 14=#357270
+palette = 15=#393a34
+
+background = #ddd7c4
+foreground = #2e2a24
+cursor-color = #2e2a24
+cursor-text = #ddd7c4
+selection-background = #bfb8a3
+selection-foreground = #2e2a24

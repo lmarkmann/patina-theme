@@ -1,0 +1,22 @@
+name: Publish to Open VSX
+
+on:
+  push:
+    tags: ["v*"]
+  workflow_dispatch:
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npx @vscode/vsce package -o patina-theme.vsix
+
+      - run: npx ovsx publish patina-theme.vsix
+        env:
+          OVSX_PAT: ${{ secrets.OVSX_PAT }}
