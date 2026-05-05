@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1
+
+- Fix VS Code Marketplace publish: workflow now patches `package.json` publisher to `LuisCMarkmann` (Marketplace ID) before packaging, while Open VSX continues to use `lmarkmann` (its namespace).
+
 ## 1.2.0
 
 - Narrow official release scope to four surfaces: VS Code Marketplace, Open VSX, Ghostty, and Zed.
