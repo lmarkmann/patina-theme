@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.2.2
+
+- Fix invisible hover and selection states across Zed and VS Code/Cursor pickers, lists, menus, and autocomplete.
+- Zed: set `ghost_element.background` transparent and mirror `ghost_element.hover/active/selected` to their `element.*` counterparts (canonical Zed pattern); separate `element.hover` from `element.selected` so hover, selected, and active step distinctly. Add missing `unreachable.background` and `unreachable.border`.
+- VS Code: recalibrate `list.*` hover/selection backgrounds and `tab.hoverBackground` / `tab.unfocusedHoverBackground` so they no longer collide with their surrounding surface.
+- VS Code: add 25 missing keys per variant covering `editorSuggestWidget.*`, `editorHoverWidget.*`, `menu.*`, `menubar.*`, `peekViewResult.selection*`, `commandCenter.*`, `statusBarItem.hoverBackground/activeBackground`, plus `list.focusForeground`, `tab.hoverForeground`, `tab.unfocusedHoverForeground`, and `quickInputList.focusForeground`.
+
 ## 1.2.1
 
 - Fix VS Code Marketplace publish: workflow now patches `package.json` publisher to `LuisCMarkmann` (Marketplace ID) before packaging, while Open VSX continues to use `lmarkmann` (its namespace).
