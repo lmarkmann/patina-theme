@@ -1,0 +1,19 @@
+name: Release to Zed Extensions
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: Open Zed extensions PR
+    runs-on: ubuntu-latest
+    steps:
+      - uses: huacnlee/zed-extension-action@v2
+        with:
+          extension-name: patina-theme
+          push-to: lmarkmann/extensions
+        env:
+          COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
