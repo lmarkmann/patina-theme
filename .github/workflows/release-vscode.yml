@@ -18,7 +18,7 @@ jobs:
       # VS Code Marketplace publisher is LuisCMarkmann; Open VSX namespace
       # is lmarkmann. package.json holds lmarkmann (default for OVSX); patch
       # it to LuisCMarkmann here only.
-      - run: sed -i 's/"publisher": "lmarkmann"/"publisher": "LuisCMarkmann"/' package.json
+      - run: "sed -i 's/\"publisher\": \"lmarkmann\"/\"publisher\": \"LuisCMarkmann\"/' package.json"
 
       - run: npx @vscode/vsce package -o patina-theme.vsix
 
