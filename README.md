@@ -2,26 +2,29 @@
 
 A warm, muted color theme inspired by oxidized copper. Teal verdigris meets amber warmth on deep, quiet backgrounds.
 
-![Patina Preview](./assets/preview.gif)
-
-![Patina Dark](./assets/patina-dark.png)
+![Patina Dark preview](./assets/preview-patina-dark.png)
 
 ## Variants
 
-| Variant              | Background | Character                          |
-| -------------------- | ---------- | ---------------------------------- |
-| **Patina Dark**      | `#121212`  | Full contrast, deep black          |
-| **Patina Dark Soft** | `#1a1a1a`  | Reduced contrast, gentler on eyes  |
-| **Patina Light**     | `#ddd7c4`  | Warm parchment                     |
-| **Patina Stellar**   | `#f5f2ed`  | Bright, airy                       |
+| Variant | Background | Character |
+| --- | --- | --- |
+| **Patina Dark** | `#121212` | Full contrast, deep black |
+| **Patina Dark Soft** | `#1a1a1a` | Reduced contrast, gentler on eyes |
+| **Patina Moss** | `#20231f` | Dark, moss-tinted ground |
+| **Patina Light** | `#ddd7c4` | Warm parchment |
+| **Patina Lichen** | `#cdd1c6` | Light, cool grey-green stone |
+| **Patina Stellar** | `#f5f2ed` | Bright, airy |
 
-Patina Dark, Light, and Stellar pass WCAG AA contrast (4.5:1) on every syntax token except `markup.ignored`, which is intentionally blended with the background. Patina Dark Soft intentionally softens four tokens slightly below strict AA for reduced eye strain during long sessions.
+Patina Dark, Light, and Stellar pass WCAG AA contrast (4.5:1) on every syntax token except `markup.ignored`, which is intentionally blended with the background. Patina Dark Soft and Lichen intentionally soften a handful of tokens slightly below strict AA for reduced eye strain during long sessions.
 
-## Syntax Highlighting
+### Previews
 
-![Patina Python](./assets/screenshot-python.png)
-
-![Patina Rust](./assets/screenshot-rust.png)
+![Patina Dark](./assets/preview-patina-dark.png)
+![Patina Dark Soft](./assets/preview-patina-dark-soft.png)
+![Patina Moss](./assets/preview-patina-moss.png)
+![Patina Light](./assets/preview-patina-light.png)
+![Patina Lichen](./assets/preview-patina-lichen.png)
+![Patina Stellar](./assets/preview-patina-stellar.png)
 
 ## Install
 
@@ -33,12 +36,17 @@ ext install LuisCMarkmann.patina-theme
 
 Also published on [Open VSX](https://open-vsx.org/extension/lmarkmann/patina-theme) for Cursor, VSCodium, Gitpod, Theia, and other compatible editors.
 
+**Zed** — open the command palette, run `zed: install extension`, and search for **Patina**.
+
 ## Also available for
 
-| Editor / Terminal | Files | Install |
-| --- | --- | --- |
-| [Ghostty](https://ghostty.org/) | `terminals/ghostty/` | Copy to `~/.config/ghostty/themes/` |
-| [Zed](https://zed.dev/) | `themes/patina.json` | `zed: install extension` -> "Patina", or copy to `~/.config/zed/themes/` |
+| Editor / Terminal | Files |
+| --- | --- |
+| [Ghostty](https://ghostty.org/) | `terminals/ghostty/` |
+| [Helix](https://helix-editor.com/) | `helix-editor/` |
+| [iTerm2](https://iterm2.com/) | `iterm2-color-schemes/` |
+
+Copy the relevant files into your editor or terminal config directory.
 
 ## Recommended pairings
 

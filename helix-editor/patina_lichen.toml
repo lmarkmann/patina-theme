@@ -1,0 +1,99 @@
+"ui.background" = { bg = "#cdd1c6" }
+"ui.text" = { fg = "#393a34" }
+"ui.text.focus" = { fg = "#393a34" }
+"ui.cursor" = { fg = "#cdd1c6", bg = "#393a34" }
+"ui.cursor.primary" = { fg = "#cdd1c6", bg = "#393a34" }
+"ui.cursor.match" = { fg = "#cdd1c6", bg = "#2a6361" }
+"ui.selection" = { bg = "#bcc1b6" }
+"ui.selection.primary" = { bg = "#a7ada0" }
+"ui.linenr" = { fg = "#80857a" }
+"ui.linenr.selected" = { fg = "#393a34" }
+"ui.cursorline.primary" = { bg = "#c2c6bb" }
+"ui.statusline" = { fg = "#393a34", bg = "#c2c6bb" }
+"ui.statusline.inactive" = { fg = "#80857a", bg = "#c5c9be" }
+"ui.statusline.normal" = { fg = "#cdd1c6", bg = "#33644d" }
+"ui.statusline.insert" = { fg = "#cdd1c6", bg = "#854b3f" }
+"ui.statusline.select" = { fg = "#cdd1c6", bg = "#2a6361" }
+"ui.popup" = { fg = "#393a34", bg = "#c2c6bb" }
+"ui.window" = { fg = "#b4b9ac" }
+"ui.help" = { fg = "#393a34", bg = "#c2c6bb" }
+"ui.menu" = { fg = "#393a34", bg = "#c2c6bb" }
+"ui.menu.selected" = { fg = "#393a34", bg = "#a7ada0" }
+"ui.menu.scroll" = { fg = "#80857a" }
+"ui.virtual.whitespace" = { fg = "#b4b9ac" }
+"ui.virtual.ruler" = { bg = "#c2c6bb" }
+"ui.virtual.indent-guide" = { fg = "#b4b9ac" }
+"ui.virtual.inlay-hint" = { fg = "#80857a" }
+"ui.bufferline" = { fg = "#80857a", bg = "#c5c9be" }
+"ui.bufferline.active" = { fg = "#393a34", bg = "#cdd1c6" }
+
+"comment" = { fg = "#5f6a5f" }
+"string" = { fg = "#854b3f" }
+"string.special" = { fg = "#7f5031" }
+"keyword" = { fg = "#33644d" }
+"keyword.control" = { fg = "#8b4646" }
+"keyword.control.return" = { fg = "#8b4646" }
+"keyword.control.import" = { fg = "#5f6a5f" }
+"keyword.operator" = { fg = "#6b6a62" }
+"keyword.function" = { fg = "#33644d" }
+"function" = { fg = "#426338" }
+"function.method" = { fg = "#426338" }
+"function.builtin" = { fg = "#426338" }
+"function.macro" = { fg = "#8b4646" }
+"variable" = { fg = "#615c49" }
+"variable.parameter" = { fg = "#5e5c23" }
+"variable.builtin" = { fg = "#8b4646" }
+"variable.other.member" = { fg = "#615c49" }
+"type" = { fg = "#2a6361" }
+"type.builtin" = { fg = "#2a6361" }
+"type.enum.variant" = { fg = "#2a6361" }
+"constructor" = { fg = "#2a6361" }
+"constant" = { fg = "#854b3f" }
+"constant.numeric" = { fg = "#2e645d" }
+"constant.character" = { fg = "#854b3f" }
+"constant.character.escape" = { fg = "#8b4646" }
+"constant.builtin" = { fg = "#7f5031" }
+"constant.builtin.boolean" = { fg = "#7f5031" }
+"operator" = { fg = "#6b6a62" }
+"punctuation" = { fg = "#5b5b54" }
+"punctuation.delimiter" = { fg = "#5b5b54" }
+"punctuation.bracket" = { fg = "#5b5b54" }
+"punctuation.special" = { fg = "#6b6a62" }
+"tag" = { fg = "#2a6361" }
+"attribute" = { fg = "#615c49" }
+"namespace" = { fg = "#2a6361" }
+"label" = { fg = "#854b3f" }
+"special" = { fg = "#6b6a62" }
+
+"markup.heading" = { fg = "#426338", modifiers = ["bold"] }
+"markup.bold" = { modifiers = ["bold"] }
+"markup.italic" = { modifiers = ["italic"] }
+"markup.strikethrough" = { modifiers = ["crossed_out"] }
+"markup.link.url" = { fg = "#33644d", modifiers = ["underlined"] }
+"markup.link.text" = { fg = "#854b3f" }
+"markup.raw" = { fg = "#615c49" }
+"markup.raw.inline" = { fg = "#615c49" }
+"markup.list" = { fg = "#8b4646" }
+"markup.normal" = { fg = "#393a34" }
+"markup.normal.hover" = { fg = "#393a34" }
+"markup.heading.hover" = { fg = "#426338", modifiers = ["bold"] }
+"markup.raw.inline.hover" = { fg = "#615c49" }
+"markup.normal.completion" = { fg = "#393a34" }
+"markup.heading.completion" = { fg = "#426338", modifiers = ["bold"] }
+"markup.raw.inline.completion" = { fg = "#615c49" }
+"ui.popup.info" = { fg = "#393a34", bg = "#c2c6bb" }
+
+"diff.plus" = { fg = "#33644d" }
+"diff.minus" = { fg = "#8b4646" }
+"diff.delta" = { fg = "#615c49" }
+
+"diagnostic.error" = { underline = { style = "curl", color = "#a23333" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "#7f5031" } }
+"diagnostic.info" = { underline = { style = "curl", color = "#35616d" } }
+"diagnostic.hint" = { underline = { style = "curl", color = "#5f6a5f" } }
+"diagnostic.unnecessary" = { modifiers = ["dim"] }
+
+"error" = { fg = "#a23333" }
+"warning" = { fg = "#7f5031" }
+"info" = { fg = "#35616d" }
+"hint" = { fg = "#5f6a5f" }

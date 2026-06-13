@@ -1,7 +1,8 @@
 id = "patina-theme"
 name = "Patina"
-version = "1.2.2"
+version = "1.3.0"
 schema_version = 1
 authors = ["Luis Markmann"]
-description = "Warm, muted theme with earthy tones. Teal oxidation and amber warmth. Includes Dark, Dark Soft, Light, and Stellar variants."
+description = "Warm, muted theme with earthy tones. Teal oxidation and amber warmth. Includes Dark, Dark Soft, Moss, Light, Lichen, and Stellar variants."
 repository = "https://github.com/lmarkmann/patina-theme"
+themes = ["themes/patina.json"]

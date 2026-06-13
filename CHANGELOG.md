@@ -1,5 +1,17 @@
 # Changelog
 
+## 1.3.0
+
+- Add two new variants, bringing the family to six: **Patina Moss** (dark, moss-tinted ground `#20231f`) and **Patina Lichen** (light, cool grey-green stone ground `#cdd1c6`).
+- Retune all four original variants (**Dark Soft**, **Dark**, **Light**, **Stellar**) to reduce long-session eye fatigue (color-interaction fixes grounded in Albers/Itten and OKLCH measurement). The two light variants were the worst offenders: every accent had been tuned to a single contrast ratio, which on a fixed ground forced them all to one luminance (accent lightness span 0.02), so adjacent tokens were separated by hue alone. The same six moves applied to every variant:
+  - Demote `operator`, `keyword.operator`, and `punctuation.special` from red to a warm grey; red is now reserved for control flow, exceptions, and escapes (Itten contrast-of-extension).
+  - Move `function` in lightness so it separates from `keyword` by value, not just hue.
+  - Cut `comment` chroma so comments recede instead of competing in the green cluster.
+  - Calm `variable` toward neutral to quiet the highest-frequency colored token.
+  - Separate `string` from `constant` by value; merge `boolean` into `constant`.
+  - Net effect on the light variants: accent lightness span widened from 0.02 to 0.07.
+- Regenerate Ghostty and iTerm2 terminal palettes for all six variants.
+
 ## 1.2.2
 
 - Fix invisible hover and selection states across Zed and VS Code/Cursor pickers, lists, menus, and autocomplete.

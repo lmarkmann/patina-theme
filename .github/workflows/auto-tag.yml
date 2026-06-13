@@ -1,0 +1,66 @@
+name: Auto-tag on version bump
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.COMMITTER_TOKEN }}
+
+      - name: Detect version change
+        id: version
+        run: |
+          set -e
+
+          current_ext=$(grep '^version\s*=' extension.toml | sed 's/.*=\s*"\(.*\)".*/\1/')
+          current_pkg=$(node -p "require('./package.json').version")
+
+          echo "extension.toml version: $current_ext"
+          echo "package.json version: $current_pkg"
+
+          if [ "$current_ext" != "$current_pkg" ]; then
+            echo "error: extension.toml ($current_ext) and package.json ($current_pkg) versions do not match"
+            exit 1
+          fi
+
+          previous_ext=$(git show HEAD~1:extension.toml 2>/dev/null | grep '^version\s*=' | sed 's/.*=\s*"\(.*\)".*/\1/' || echo "0.0.0")
+          previous_pkg=$(git show HEAD~1:package.json 2>/dev/null | grep '"version"' | head -1 | sed 's/.*"version"[^"]*"\([^"]*\)".*/\1/' || echo "0.0.0")
+
+          echo "previous extension.toml version: $previous_ext"
+          echo "previous package.json version: $previous_pkg"
+
+          if [ "$current_ext" = "$previous_ext" ] && [ "$current_pkg" = "$previous_pkg" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No version change; skipping tag."
+            exit 0
+          fi
+
+          tag="v$current_ext"
+          if git rev-parse "$tag" >/dev/null 2>&1; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "Tag $tag already exists; skipping."
+            exit 0
+          fi
+
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+          echo "tag=$tag" >> "$GITHUB_OUTPUT"
+          echo "Version changed from $previous_ext to $current_ext; will push $tag."
+
+      - name: Push tag
+        if: steps.version.outputs.changed == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git tag -a "${{ steps.version.outputs.tag }}" -m "Release ${{ steps.version.outputs.tag }}"
+          git push origin "${{ steps.version.outputs.tag }}"

@@ -12,7 +12,7 @@
 "ui.statusline" = { fg = "#393a34", bg = "#d2ccb9" }
 "ui.statusline.inactive" = { fg = "#8a8a80", bg = "#d5cfbc" }
 "ui.statusline.normal" = { fg = "#ddd7c4", bg = "#33644d" }
-"ui.statusline.insert" = { fg = "#ddd7c4", bg = "#854b3f" }
+"ui.statusline.insert" = { fg = "#ddd7c4", bg = "#7a3527" }
 "ui.statusline.select" = { fg = "#ddd7c4", bg = "#2a6361" }
 "ui.popup" = { fg = "#393a34", bg = "#d2ccb9" }
 "ui.window" = { fg = "#c2bdad" }
@@ -27,59 +27,59 @@
 "ui.bufferline" = { fg = "#8a8a80", bg = "#d5cfbc" }
 "ui.bufferline.active" = { fg = "#393a34", bg = "#ddd7c4" }
 
-"comment" = { fg = "#515e51" }
-"string" = { fg = "#854b3f" }
+"comment" = { fg = "#666e65" }
+"string" = { fg = "#7a3527" }
 "string.special" = { fg = "#7f5031" }
 "keyword" = { fg = "#33644d" }
 "keyword.control" = { fg = "#8b4646" }
 "keyword.control.return" = { fg = "#8b4646" }
-"keyword.control.import" = { fg = "#515e51" }
-"keyword.operator" = { fg = "#8b4646" }
+"keyword.control.import" = { fg = "#666e65" }
+"keyword.operator" = { fg = "#645c52" }
 "keyword.function" = { fg = "#33644d" }
-"function" = { fg = "#426338" }
-"function.method" = { fg = "#426338" }
-"function.builtin" = { fg = "#426338" }
+"function" = { fg = "#2f5418" }
+"function.method" = { fg = "#2f5418" }
+"function.builtin" = { fg = "#2f5418" }
 "function.macro" = { fg = "#8b4646" }
-"variable" = { fg = "#6e5831" }
+"variable" = { fg = "#574d3a" }
 "variable.parameter" = { fg = "#5e5c23" }
 "variable.builtin" = { fg = "#8b4646" }
-"variable.other.member" = { fg = "#6e5831" }
+"variable.other.member" = { fg = "#574d3a" }
 "type" = { fg = "#2a6361" }
 "type.builtin" = { fg = "#2a6361" }
 "type.enum.variant" = { fg = "#2a6361" }
 "constructor" = { fg = "#2a6361" }
-"constant" = { fg = "#854b3f" }
+"constant" = { fg = "#7a3527" }
 "constant.numeric" = { fg = "#2e645d" }
-"constant.character" = { fg = "#854b3f" }
+"constant.character" = { fg = "#7a3527" }
 "constant.character.escape" = { fg = "#8b4646" }
-"constant.builtin" = { fg = "#6e5739" }
-"constant.builtin.boolean" = { fg = "#6e5739" }
-"operator" = { fg = "#8b4646" }
+"constant.builtin" = { fg = "#7f5031" }
+"constant.builtin.boolean" = { fg = "#7f5031" }
+"operator" = { fg = "#645c52" }
 "punctuation" = { fg = "#5b5b54" }
 "punctuation.delimiter" = { fg = "#5b5b54" }
 "punctuation.bracket" = { fg = "#5b5b54" }
-"punctuation.special" = { fg = "#8b4646" }
+"punctuation.special" = { fg = "#645c52" }
 "tag" = { fg = "#2a6361" }
 "attribute" = { fg = "#6e5831" }
 "namespace" = { fg = "#2a6361" }
-"label" = { fg = "#854b3f" }
-"special" = { fg = "#8b4646" }
+"label" = { fg = "#7a3527" }
+"special" = { fg = "#645c52" }
 
-"markup.heading" = { fg = "#426338", modifiers = ["bold"] }
+"markup.heading" = { fg = "#2f5418", modifiers = ["bold"] }
 "markup.bold" = { modifiers = ["bold"] }
 "markup.italic" = { modifiers = ["italic"] }
 "markup.strikethrough" = { modifiers = ["crossed_out"] }
 "markup.link.url" = { fg = "#33644d", modifiers = ["underlined"] }
-"markup.link.text" = { fg = "#854b3f" }
+"markup.link.text" = { fg = "#7a3527" }
 "markup.raw" = { fg = "#6e5831" }
 "markup.raw.inline" = { fg = "#6e5831" }
 "markup.list" = { fg = "#8b4646" }
 "markup.normal" = { fg = "#393a34" }
 "markup.normal.hover" = { fg = "#393a34" }
-"markup.heading.hover" = { fg = "#426338", modifiers = ["bold"] }
+"markup.heading.hover" = { fg = "#2f5418", modifiers = ["bold"] }
 "markup.raw.inline.hover" = { fg = "#6e5831" }
 "markup.normal.completion" = { fg = "#393a34" }
-"markup.heading.completion" = { fg = "#426338", modifiers = ["bold"] }
+"markup.heading.completion" = { fg = "#2f5418", modifiers = ["bold"] }
 "markup.raw.inline.completion" = { fg = "#6e5831" }
 "ui.popup.info" = { fg = "#393a34", bg = "#d2ccb9" }
 
@@ -88,12 +88,12 @@
 "diff.delta" = { fg = "#6e5831" }
 
 "diagnostic.error" = { underline = { style = "curl", color = "#a23333" } }
-"diagnostic.warning" = { underline = { style = "curl", color = "#6e5739" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "#7f5031" } }
 "diagnostic.info" = { underline = { style = "curl", color = "#35616d" } }
-"diagnostic.hint" = { underline = { style = "curl", color = "#515e51" } }
+"diagnostic.hint" = { underline = { style = "curl", color = "#666e65" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 
 "error" = { fg = "#a23333" }
-"warning" = { fg = "#6e5739" }
+"warning" = { fg = "#7f5031" }
 "info" = { fg = "#35616d" }
-"hint" = { fg = "#515e51" }
+"hint" = { fg = "#666e65" }

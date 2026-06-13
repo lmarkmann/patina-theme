@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Patina Theme</title>
+  <meta name="description" content="Patina, a warm, muted color theme for VS Code, Zed, Helix, Ghostty, and iTerm2.">
+  <style>
+    :root {
+      --bg: #121212;
+      --fg: #dbd7ca;
+      --muted: #777777;
+      --accent: #4d9375;
+      --card: #1a1a1a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, sans-serif;
+    }
+    main { max-width: 860px; margin: 0 auto; padding: 4rem 1.5rem; }
+    h1 { font-size: 2.4rem; margin: 0 0 0.5rem; }
+    .tagline { color: var(--muted); margin: 0 0 2.5rem; }
+    img.preview {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+      margin: 0 0 2.5rem;
+    }
+    .variants {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .variants img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    h2 { font-size: 1.1rem; margin: 2rem 0 0.75rem; }
+    ul.links { list-style: none; padding: 0; margin: 0; }
+    ul.links li { margin: 0.4rem 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: var(--card);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9em;
+    }
+    footer { margin-top: 3rem; color: var(--muted); font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Patina</h1>
+    <p class="tagline">A warm, muted color theme inspired by oxidized copper — teal verdigris meets amber warmth on deep, quiet backgrounds.</p>
+
+    <img class="preview" src="https://raw.githubusercontent.com/lmarkmann/patina-theme/main/assets/preview-patina-dark.png" alt="Patina Dark preview">
+
+    <h2>Variants</h2>
+    <div class="variants">
+      <img src="https://raw.githubusercontent.com/lmarkmann/patina-theme/main/assets/preview-patina-dark.png" alt="Patina Dark">
+      <img src="https://raw.githubusercontent.com/lmarkmann/patina-theme/main/assets/preview-patina-dark-soft.png" alt="Patina Dark Soft">
+      <img src="https://raw.githubusercontent.com/lmarkmann/patina-theme/main/assets/preview-patina-moss.png" alt="Patina Moss">
+      <img src="https://raw.githubusercontent.com/lmarkmann/patina-theme/main/assets/preview-patina-light.png" alt="Patina Light">
+      <img src="https://raw.githubusercontent.com/lmarkmann/patina-theme/main/assets/preview-patina-lichen.png" alt="Patina Lichen">
+      <img src="https://raw.githubusercontent.com/lmarkmann/patina-theme/main/assets/preview-patina-stellar.png" alt="Patina Stellar">
+    </div>
+
+    <h2>Install</h2>
+    <ul class="links">
+      <li>VS Code: <a href="https://marketplace.visualstudio.com/items?itemName=LuisCMarkmann.patina-theme">Marketplace</a> or <code>ext install LuisCMarkmann.patina-theme</code></li>
+      <li>Cursor / VSCodium / Gitpod / Theia: <a href="https://open-vsx.org/extension/lmarkmann/patina-theme">Open VSX</a></li>
+      <li>Zed: <code>zed: install extension</code> and search for Patina</li>
+      <li>Ghostty, Helix, iTerm2: files in the <a href="https://github.com/lmarkmann/patina-theme">repository</a></li>
+    </ul>
+
+    <h2>Preview</h2>
+    <ul class="links">
+      <li>Browse all variants live on <a href="https://vscodethemes.com/e/LuisCMarkmann.patina-theme/patina">vscodethemes</a></li>
+    </ul>
+
+    <footer>MIT licensed. Source on <a href="https://github.com/lmarkmann/patina-theme">GitHub</a>.</footer>
+  </main>
+</body>
+</html>

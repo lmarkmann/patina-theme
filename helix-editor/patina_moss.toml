@@ -1,31 +1,31 @@
-"ui.background" = { bg = "#1a1a1a" }
+"ui.background" = { bg = "#20231f" }
 "ui.text" = { fg = "#dbd7ca" }
 "ui.text.focus" = { fg = "#dbd7ca" }
-"ui.cursor" = { fg = "#1a1a1a", bg = "#dbd7ca" }
-"ui.cursor.primary" = { fg = "#1a1a1a", bg = "#dbd7ca" }
-"ui.cursor.match" = { fg = "#1a1a1a", bg = "#5da9a7" }
+"ui.cursor" = { fg = "#20231f", bg = "#dbd7ca" }
+"ui.cursor.primary" = { fg = "#20231f", bg = "#dbd7ca" }
+"ui.cursor.match" = { fg = "#20231f", bg = "#5da9a7" }
 "ui.selection" = { bg = "#3a3a3a" }
 "ui.selection.primary" = { bg = "#484540" }
 "ui.linenr" = { fg = "#3a3a3a" }
 "ui.linenr.selected" = { fg = "#dbd7ca" }
-"ui.cursorline.primary" = { bg = "#222222" }
-"ui.statusline" = { fg = "#dbd7ca", bg = "#222222" }
-"ui.statusline.inactive" = { fg = "#555555", bg = "#1e1e1e" }
-"ui.statusline.normal" = { fg = "#1a1a1a", bg = "#4d9375" }
-"ui.statusline.insert" = { fg = "#1a1a1a", bg = "#d29384" }
-"ui.statusline.select" = { fg = "#1a1a1a", bg = "#5da9a7" }
-"ui.popup" = { fg = "#dbd7ca", bg = "#222222" }
-"ui.window" = { fg = "#333333" }
-"ui.help" = { fg = "#dbd7ca", bg = "#222222" }
-"ui.menu" = { fg = "#dbd7ca", bg = "#222222" }
+"ui.cursorline.primary" = { bg = "#282b25" }
+"ui.statusline" = { fg = "#dbd7ca", bg = "#282b25" }
+"ui.statusline.inactive" = { fg = "#585b51", bg = "#242721" }
+"ui.statusline.normal" = { fg = "#20231f", bg = "#4d9375" }
+"ui.statusline.insert" = { fg = "#20231f", bg = "#d29384" }
+"ui.statusline.select" = { fg = "#20231f", bg = "#5da9a7" }
+"ui.popup" = { fg = "#dbd7ca", bg = "#282b25" }
+"ui.window" = { fg = "#383b33" }
+"ui.help" = { fg = "#dbd7ca", bg = "#282b25" }
+"ui.menu" = { fg = "#dbd7ca", bg = "#282b25" }
 "ui.menu.selected" = { fg = "#e8e4da", bg = "#3a3a3a" }
-"ui.menu.scroll" = { fg = "#555555" }
-"ui.virtual.whitespace" = { fg = "#333333" }
-"ui.virtual.ruler" = { bg = "#222222" }
-"ui.virtual.indent-guide" = { fg = "#333333" }
+"ui.menu.scroll" = { fg = "#585b51" }
+"ui.virtual.whitespace" = { fg = "#383b33" }
+"ui.virtual.ruler" = { bg = "#282b25" }
+"ui.virtual.indent-guide" = { fg = "#383b33" }
 "ui.virtual.inlay-hint" = { fg = "#606060" }
-"ui.bufferline" = { fg = "#555555", bg = "#1e1e1e" }
-"ui.bufferline.active" = { fg = "#dbd7ca", bg = "#222222" }
+"ui.bufferline" = { fg = "#585b51", bg = "#242721" }
+"ui.bufferline.active" = { fg = "#dbd7ca", bg = "#282b25" }
 
 "comment" = { fg = "#7d857c" }
 "string" = { fg = "#d29384" }
@@ -81,7 +81,7 @@
 "markup.normal.completion" = { fg = "#dbd7ca" }
 "markup.heading.completion" = { fg = "#9aba7a", modifiers = ["bold"] }
 "markup.raw.inline.completion" = { fg = "#bd976a" }
-"ui.popup.info" = { fg = "#dbd7ca", bg = "#222222" }
+"ui.popup.info" = { fg = "#dbd7ca", bg = "#282b25" }
 
 "diff.plus" = { fg = "#4d9375" }
 "diff.minus" = { fg = "#cb7676" }

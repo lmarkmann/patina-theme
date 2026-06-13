@@ -8,13 +8,13 @@ palette = 4=#2f626f
 palette = 5=#7a4f47
 palette = 6=#2e6260
 palette = 7=#5a5248
-palette = 8=#6a6258
-palette = 9=#b64747
-palette = 10=#3d764c
-palette = 11=#81651a
-palette = 12=#3a7280
-palette = 13=#8e5b51
-palette = 14=#357270
+palette = 8=#625a51
+palette = 9=#833333
+palette = 10=#2d5839
+palette = 11=#634e14
+palette = 12=#2c5660
+palette = 13=#6d463e
+palette = 14=#285654
 palette = 15=#393a34
 
 background = #ddd7c4
