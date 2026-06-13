@@ -2,8 +2,6 @@
 
 A warm, muted color theme inspired by oxidized copper. Teal verdigris meets amber warmth on deep, quiet backgrounds.
 
-![Patina Dark preview](./assets/preview-patina-dark.png)
-
 ## Variants
 
 | Variant              | Background | Character                         |
@@ -19,16 +17,15 @@ Patina Dark, Light, and Stellar pass WCAG AA contrast (4.5:1) on every syntax to
 
 ### Previews
 
-![Patina Dark](./assets/preview-patina-dark.png)
-![Patina Dark Soft](./assets/preview-patina-dark-soft.png)
-![Patina Moss](./assets/preview-patina-moss.png)
-![Patina Light](./assets/preview-patina-light.png)
-![Patina Lichen](./assets/preview-patina-lichen.png)
-![Patina Stellar](./assets/preview-patina-stellar.png)
+|                     **Patina Dark**                     |                       **Patina Dark Soft**                        |                     **Patina Moss**                     |
+| :-----------------------------------------------------: | :---------------------------------------------------------------: | :-----------------------------------------------------: |
+|    ![Patina Dark](./assets/preview-patina-dark.png)     |    ![Patina Dark Soft](./assets/preview-patina-dark-soft.png)     |    ![Patina Moss](./assets/preview-patina-moss.png)     |
+|                    **Patina Light**                     |                        **Patina Lichen**                         |                    **Patina Stellar**                    |
+|    ![Patina Light](./assets/preview-patina-light.png)    |     ![Patina Lichen](./assets/preview-patina-lichen.png)     |    ![Patina Stellar](./assets/preview-patina-stellar.png)    |
 
 ## Install
 
-**VS Code / Cursor / VSCodium** — search for **Patina** in the Extensions panel, or:
+**VS Code / Cursor / VSCodium** search for **Patina** in the Extensions panel, or:
 
 ```
 ext install LuisCMarkmann.patina-theme
@@ -36,7 +33,7 @@ ext install LuisCMarkmann.patina-theme
 
 Also published on [Open VSX](https://open-vsx.org/extension/lmarkmann/patina-theme) for Cursor, VSCodium, and other open vsx compatible editors.
 
-**Zed** — open the command palette, run `zed: install extension`, and search for **Patina**.
+**Zed** open the command palette, run `zed: install extension`, and search for **Patina**.
 
 ## Also available for
 

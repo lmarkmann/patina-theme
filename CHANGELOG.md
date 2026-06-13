@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.1
+
+- README: remove the duplicate hero preview and arrange the six variant previews as a named three-column grid.
+- Project page: add a favicon, remove the duplicate hero, and label each variant preview.
+
 ## 1.3.0
 
 - Add two new variants, bringing the family to six: **Patina Moss** (dark, moss-tinted ground `#20231f`) and **Patina Lichen** (light, cool grey-green stone ground `#cdd1c6`).
