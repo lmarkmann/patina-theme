@@ -1,9 +1,11 @@
 name: Release to Zed Extensions
 
+# Auto-publish on tags is disabled until the first-add PR
+# (zed-industries/extensions#6470) is merged. The bump action only updates an
+# existing registry entry, so it fails on every tag until Patina is in the
+# registry. Re-add the `push: tags` trigger once #6470 is merged; until then
+# run this manually via workflow_dispatch.
 on:
-  push:
-    tags:
-      - "v*"
   workflow_dispatch:
 
 jobs:
