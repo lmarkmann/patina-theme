@@ -165,7 +165,7 @@
     "gitDecoration.modifiedResourceForeground": "#65a8b5",
     "gitDecoration.deletedResourceForeground": "#b86e6e",
     "gitDecoration.untrackedResourceForeground": "#5a9e9c",
-    "gitDecoration.ignoredResourceForeground": "#4a4a4a",
+    "gitDecoration.ignoredResourceForeground": "#6e6a61",
     "gitDecoration.conflictingResourceForeground": "#af8d62",
     "gitDecoration.submoduleResourceForeground": "#c8c4b890",
     "editorGutter.modifiedBackground": "#65a8b5",

@@ -3,8 +3,7 @@
 
 Outputs:
   terminals/ghostty/<name>            (no extension, per Ghostty convention)
-  contrib/iterm2-color-schemes/<Title Case>.itermcolors  (for upstream PR)
-  iterm2-color-schemes/<name>.itermcolors
+  contrib/iterm2-color-schemes/<Title Case>.itermcolors  (upstream naming)
 
 Run after changing any palette:
   python3 generate.py
@@ -239,7 +238,7 @@ ITERM_ANSI_KEYS = [
 ]
 
 
-def generate_iterm2(_name: str, p: dict) -> str:
+def generate_iterm2(p: dict) -> str:
     lines = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">',
@@ -266,19 +265,14 @@ def slug_to_title(name: str) -> str:
 def main():
     base = Path(__file__).parent
     ghostty_dir = base / "terminals" / "ghostty"
-    contrib_dir = base / "contrib" / "iterm2-color-schemes"
-    iterm2_dir = base / "iterm2-color-schemes"
-    for d in [ghostty_dir, contrib_dir, iterm2_dir]:
+    iterm2_dir = base / "contrib" / "iterm2-color-schemes"
+    for d in [ghostty_dir, iterm2_dir]:
         d.mkdir(parents=True, exist_ok=True)
 
     for name, palette in PALETTES.items():
         (ghostty_dir / name).write_text(generate_ghostty(name, palette))
-
-        iterm_content = generate_iterm2(name, palette)
-        (iterm2_dir / f"{name}.itermcolors").write_text(iterm_content)
-
         title = slug_to_title(name)
-        (contrib_dir / f"{title}.itermcolors").write_text(iterm_content)
+        (iterm2_dir / f"{title}.itermcolors").write_text(generate_iterm2(palette))
         print(f"  {name}")
 
     print("done")

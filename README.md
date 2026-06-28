@@ -37,13 +37,15 @@ Also published on [Open VSX](https://open-vsx.org/extension/lmarkmann/patina-the
 
 ## Also available for
 
-| Editor / Terminal                  | Files                   |
-| ---------------------------------- | ----------------------- |
-| [Ghostty](https://ghostty.org/)    | `terminals/ghostty/`    |
-| [Helix](https://helix-editor.com/) | `helix-editor/`         |
-| [iTerm2](https://iterm2.com/)      | `iterm2-color-schemes/` |
+| Editor / Terminal                  | Files                           |
+| ---------------------------------- | ------------------------------- |
+| [Ghostty](https://ghostty.org/)    | `terminals/ghostty/`            |
+| [Helix](https://helix-editor.com/) | `helix-editor/`                 |
+| [iTerm2](https://iterm2.com/)      | `contrib/iterm2-color-schemes/` |
 
 Copy the relevant files into your editor or terminal config directory.
+
+PRs porting Patina to other apps are welcome. Use the `PALETTES` dict in `generate.py` as the source of truth for colors; community ports live here but aren't official release targets.
 
 I also recommend using the [Input Font](https://input.djr.com/) together with the themes.
 
