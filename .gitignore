@@ -1,2 +1,6 @@
 *.vsix
 .DS_Store
+
+# Track .claude project context (overrides global **/.claude/), not local settings
+!.claude/
+.claude/settings.local.json
