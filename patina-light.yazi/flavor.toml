@@ -2,7 +2,7 @@
 # Ported from the Patina editor theme (Light variant).
 #
 # bg          #ddd7c4   surface     #d2ccb9   tab bg   #d9d3c0
-# fg          #393a34   muted       #8a8a80   border   #8a8a80
+# fg          #393a34   muted       #737269   border   #8a8a80
 # green       #33644d   primary accent
 # green soft  #2f5418
 # cyan        #2a6361
@@ -64,7 +64,7 @@ perm_type  = { fg = "#33644d" }
 perm_read  = { fg = "#796820" }
 perm_write = { fg = "#8b4646" }
 perm_exec  = { fg = "#2a6361" }
-perm_sep   = { fg = "#8a8a80" }
+perm_sep   = { fg = "#737269" }
 
 [pick]
 border   = { fg = "#33644d" }
@@ -90,9 +90,9 @@ hovered = { fg = "#796820" }
 [which]
 cols            = 2
 separator       = " - "
-separator_style = { fg = "#8a8a80" }
+separator_style = { fg = "#737269" }
 mask            = { bg = "#ddd7c4" }
-rest            = { fg = "#8a8a80" }
+rest            = { fg = "#737269" }
 cand            = { fg = "#33644d" }
 desc            = { fg = "#5e7052" }
 

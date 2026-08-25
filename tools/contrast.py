@@ -33,6 +33,10 @@ UI_PAIRS = [
     ("button", "button.foreground", "button.background"),
 ]
 RAMP = ["element_hover", "element_selected", "element_active"]
+# The project panel renders ordinary entries in the muted ink and git-status
+# entries in their status colours. If the muted ink is dimmer than `ignored`,
+# tracked files read as less important than ignored ones, which is backwards.
+PANEL_FLOOR = 4.0
 # A hover below this many L* from its surface is not perceptible; between the
 # two thresholds it is thin but visible. The absolute numbers in
 # .claude/CLAUDE.md were measured in OKLCH, so they are not comparable to the
@@ -104,6 +108,22 @@ def pairs(tok, km, theme):
         yield (f"token {scopes[0]}", composite(fg, bg), bg, 3.0, opaque and not dim)
 
 
+def check_panel(tok):
+    """Muted ink must be readable and must outrank the receding roles."""
+    surface = tok["surface"]
+    muted = ratio(tok["fg_muted"], surface)
+    failed = []
+    if muted < PANEL_FLOOR:
+        failed.append(f"fg_muted is {muted:.2f}:1 on the panel, floor is {PANEL_FLOOR}")
+    for name in ("ignored", "fg_inactive"):
+        if ratio(tok[name], surface) >= muted:
+            failed.append(
+                f"{name} ({ratio(tok[name], surface):.2f}) is not dimmer than "
+                f"fg_muted ({muted:.2f})"
+            )
+    return muted, failed
+
+
 def check_ramp(tok):
     """Surface ramp: each state must clear the floor and stay ordered."""
     base = lstar(tok["surface"])
@@ -137,6 +157,11 @@ def main():
             else:
                 mark = "ok"
             print(f"  {r:5.2f}  {mark:4}  {label}")
+        muted, panel_failed = check_panel(tok)
+        print(f"  panel fg_muted {muted:.2f}:1  ignored {ratio(tok['ignored'], tok['surface']):.2f}:1")
+        for msg in panel_failed:
+            print(f"  FAIL  panel: {msg}")
+            failed = True
         steps, ramp_failed, ramp_warned = check_ramp(tok)
         print("  ramp  " + "  ".join(f"{n.removeprefix('element_')} +{d:.1f}" for n, d in steps))
         for msg in ramp_warned:

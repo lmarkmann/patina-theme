@@ -2,7 +2,7 @@
 # Ported from the Patina editor theme (Stellar variant).
 #
 # bg          #f5f2ed   surface     #eae7e0   tab bg   #f0ede6
-# fg          #393a34   muted       #999999   border   #999999
+# fg          #393a34   muted       #858484   border   #999999
 # green       #3e7a5e   primary accent
 # green soft  #3a661a
 # cyan        #337675
@@ -64,7 +64,7 @@ perm_type  = { fg = "#3e7a5e" }
 perm_read  = { fg = "#8d7a27" }
 perm_write = { fg = "#a45353" }
 perm_exec  = { fg = "#337675" }
-perm_sep   = { fg = "#999999" }
+perm_sep   = { fg = "#858484" }
 
 [pick]
 border   = { fg = "#3e7a5e" }
@@ -90,9 +90,9 @@ hovered = { fg = "#8d7a27" }
 [which]
 cols            = 2
 separator       = " - "
-separator_style = { fg = "#999999" }
+separator_style = { fg = "#858484" }
 mask            = { bg = "#f5f2ed" }
-rest            = { fg = "#999999" }
+rest            = { fg = "#858484" }
 cand            = { fg = "#3e7a5e" }
 desc            = { fg = "#5e7052" }
 

@@ -2,7 +2,7 @@
 # Ported from the Patina editor theme (Lichen variant).
 #
 # bg          #d5dace   surface     #cbcfc4   tab bg   #d2d6cb
-# fg          #393a34   muted       #80857a   border   #80857a
+# fg          #393a34   muted       #70746a   border   #80857a
 # green       #34644d   primary accent
 # green soft  #2f5419
 # cyan        #2b6361
@@ -64,7 +64,7 @@ perm_type  = { fg = "#34644d" }
 perm_read  = { fg = "#7a6821" }
 perm_write = { fg = "#8c4646" }
 perm_exec  = { fg = "#2b6361" }
-perm_sep   = { fg = "#80857a" }
+perm_sep   = { fg = "#70746a" }
 
 [pick]
 border   = { fg = "#34644d" }
@@ -90,9 +90,9 @@ hovered = { fg = "#7a6821" }
 [which]
 cols            = 2
 separator       = " - "
-separator_style = { fg = "#80857a" }
+separator_style = { fg = "#70746a" }
 mask            = { bg = "#d5dace" }
-rest            = { fg = "#80857a" }
+rest            = { fg = "#70746a" }
 cand            = { fg = "#34644d" }
 desc            = { fg = "#5e7052" }
 

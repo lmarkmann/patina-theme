@@ -10,7 +10,7 @@
 "ui.linenr.selected" = { fg = "#c8c4b8" }
 "ui.cursorline.primary" = { bg = "#222222" }
 "ui.statusline" = { fg = "#c8c4b8", bg = "#222222" }
-"ui.statusline.inactive" = { fg = "#4a4a4a", bg = "#1e1e1e" }
+"ui.statusline.inactive" = { fg = "#6c6c6b", bg = "#1e1e1e" }
 "ui.statusline.normal" = { fg = "#1a1a1a", bg = "#4f9073" }
 "ui.statusline.insert" = { fg = "#1a1a1a", bg = "#c08a7d" }
 "ui.statusline.select" = { fg = "#1a1a1a", bg = "#5a9e9c" }
@@ -19,12 +19,12 @@
 "ui.help" = { fg = "#c8c4b8", bg = "#222222" }
 "ui.menu" = { fg = "#c8c4b8", bg = "#222222" }
 "ui.menu.selected" = { fg = "#c8c4b8", bg = "#414040" }
-"ui.menu.scroll" = { fg = "#4a4a4a" }
+"ui.menu.scroll" = { fg = "#6c6c6b" }
 "ui.virtual.whitespace" = { fg = "#333333" }
 "ui.virtual.ruler" = { bg = "#222222" }
 "ui.virtual.indent-guide" = { fg = "#333333" }
 "ui.virtual.inlay-hint" = { fg = "#555555" }
-"ui.bufferline" = { fg = "#4a4a4a", bg = "#1e1e1e" }
+"ui.bufferline" = { fg = "#6c6c6b", bg = "#1e1e1e" }
 "ui.bufferline.active" = { fg = "#c8c4b8", bg = "#222222" }
 
 "comment" = { fg = "#778073" }

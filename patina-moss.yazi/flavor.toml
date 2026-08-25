@@ -2,7 +2,7 @@
 # Ported from the Patina editor theme (Moss variant).
 #
 # bg          #20231f   surface     #282b25   tab bg   #242721
-# fg          #c8c4b8   muted       #4d5047   border   #51544a
+# fg          #c8c4b8   muted       #70746a   border   #51544a
 # green       #5ba886   primary accent
 # green soft  #93b072
 # cyan        #63a8a6
@@ -64,7 +64,7 @@ perm_type  = { fg = "#5ba886" }
 perm_read  = { fg = "#d4bf6e" }
 perm_write = { fg = "#c07878" }
 perm_exec  = { fg = "#63a8a6" }
-perm_sep   = { fg = "#4d5047" }
+perm_sep   = { fg = "#70746a" }
 
 [pick]
 border   = { fg = "#5ba886" }
@@ -90,9 +90,9 @@ hovered = { fg = "#d4bf6e" }
 [which]
 cols            = 2
 separator       = " - "
-separator_style = { fg = "#4d5047" }
+separator_style = { fg = "#70746a" }
 mask            = { bg = "#20231f" }
-rest            = { fg = "#4d5047" }
+rest            = { fg = "#70746a" }
 cand            = { fg = "#5ba886" }
 desc            = { fg = "#7d867a" }
 
