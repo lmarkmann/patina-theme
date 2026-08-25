@@ -64,7 +64,7 @@ string_plain = "#d29384"
 regexp_quantifier = "#4c9a91"
 
 [status]
-error = "#e05561"
+error = "#ec5f6a"
 hint = "#7d857c"
 
 [zed]

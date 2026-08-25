@@ -4,7 +4,7 @@
 "ui.cursor" = { fg = "#20231f", bg = "#c8c4b8" }
 "ui.cursor.primary" = { fg = "#20231f", bg = "#c8c4b8" }
 "ui.cursor.match" = { fg = "#20231f", bg = "#63a8a6" }
-"ui.selection" = { bg = "#383b33" }
+"ui.selection" = { bg = "#3d4039" }
 "ui.selection.primary" = { bg = "#42453c" }
 "ui.linenr" = { fg = "#51544a" }
 "ui.linenr.selected" = { fg = "#c8c4b8" }
@@ -18,7 +18,7 @@
 "ui.window" = { fg = "#383b33" }
 "ui.help" = { fg = "#c8c4b8", bg = "#282b25" }
 "ui.menu" = { fg = "#c8c4b8", bg = "#282b25" }
-"ui.menu.selected" = { fg = "#c8c4b8", bg = "#3f4239" }
+"ui.menu.selected" = { fg = "#c8c4b8", bg = "#474a44" }
 "ui.menu.scroll" = { fg = "#4d5047" }
 "ui.virtual.whitespace" = { fg = "#383b33" }
 "ui.virtual.ruler" = { bg = "#282b25" }
@@ -55,9 +55,9 @@
 "constant.builtin" = { fg = "#b88068" }
 "constant.builtin.boolean" = { fg = "#b88068" }
 "operator" = { fg = "#908d85" }
-"punctuation" = { fg = "#7f7f79" }
-"punctuation.delimiter" = { fg = "#7f7f79" }
-"punctuation.bracket" = { fg = "#7f7f79" }
+"punctuation" = { fg = "#8c8d86" }
+"punctuation.delimiter" = { fg = "#8c8d86" }
+"punctuation.bracket" = { fg = "#8c8d86" }
 "punctuation.special" = { fg = "#908d85" }
 "tag" = { fg = "#63a8a6" }
 "attribute" = { fg = "#af8d62" }
@@ -87,13 +87,13 @@
 "diff.minus" = { fg = "#c07878" }
 "diff.delta" = { fg = "#af8d62" }
 
-"diagnostic.error" = { underline = { style = "curl", color = "#d05060" } }
+"diagnostic.error" = { underline = { style = "curl", color = "#e3616f" } }
 "diagnostic.warning" = { underline = { style = "curl", color = "#d4bf6e" } }
 "diagnostic.info" = { underline = { style = "curl", color = "#65a8b5" } }
 "diagnostic.hint" = { underline = { style = "curl", color = "#7d867a" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 
-"error" = { fg = "#d05060" }
+"error" = { fg = "#e3616f" }
 "warning" = { fg = "#d4bf6e" }
 "info" = { fg = "#65a8b5" }
 "hint" = { fg = "#7d867a" }

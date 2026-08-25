@@ -4,7 +4,7 @@
 "ui.cursor" = { fg = "#f5f2ed", bg = "#393a34" }
 "ui.cursor.primary" = { fg = "#f5f2ed", bg = "#393a34" }
 "ui.cursor.match" = { fg = "#f5f2ed", bg = "#337675" }
-"ui.selection" = { bg = "#e0ddd6" }
+"ui.selection" = { bg = "#cfccc6" }
 "ui.selection.primary" = { bg = "#d5d2cb" }
 "ui.linenr" = { fg = "#999999" }
 "ui.linenr.selected" = { fg = "#393a34" }
@@ -18,7 +18,7 @@
 "ui.window" = { fg = "#d5d2cb" }
 "ui.help" = { fg = "#393a34", bg = "#eae7e0" }
 "ui.menu" = { fg = "#393a34", bg = "#eae7e0" }
-"ui.menu.selected" = { fg = "#393a34", bg = "#c8c5be" }
+"ui.menu.selected" = { fg = "#393a34", bg = "#c2c0b9" }
 "ui.menu.scroll" = { fg = "#999999" }
 "ui.virtual.whitespace" = { fg = "#d5d2cb" }
 "ui.virtual.ruler" = { bg = "#eae7e0" }

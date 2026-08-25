@@ -11,7 +11,7 @@
 # red         #c07878
 # blue/info   #65a8b5
 # orange      #af8d62
-# hint        #7d867a   error    #d05060
+# hint        #7d867a   error    #e3616f
 
 [mgr]
 marker_copied   = { fg = "#5ba886", bg = "#5ba886" }
@@ -58,7 +58,7 @@ overall   = { fg = "#c8c4b8", bg = "#282b25" }
 
 progress_label  = { fg = "#5ba886", bold = true }
 progress_normal = { fg = "#3a3d35", bg = "#20231f" }
-progress_error  = { fg = "#d05060", bg = "#20231f" }
+progress_error  = { fg = "#e3616f", bg = "#20231f" }
 
 perm_type  = { fg = "#5ba886" }
 perm_read  = { fg = "#d4bf6e" }
@@ -106,7 +106,7 @@ footer  = { fg = "#20231f", bg = "#c8c4b8" }
 [notify]
 title_info  = { fg = "#5ba886" }
 title_warn  = { fg = "#d4bf6e" }
-title_error = { fg = "#d05060" }
+title_error = { fg = "#e3616f" }
 
 [filetype]
 rules = [
@@ -115,7 +115,7 @@ rules = [
     { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#c07878" },
     { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#63a8a6" },
 
-    { url = "*", is = "orphan", fg = "#d05060" },
+    { url = "*", is = "orphan", fg = "#e3616f" },
     { url = "*", is = "exec", fg = "#93b072" },
 
     { url = "*", fg = "#c8c4b8" },

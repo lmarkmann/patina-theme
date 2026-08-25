@@ -87,13 +87,13 @@
 "diff.minus" = { fg = "#cb7676" }
 "diff.delta" = { fg = "#bd976a" }
 
-"diagnostic.error" = { underline = { style = "curl", color = "#e05561" } }
+"diagnostic.error" = { underline = { style = "curl", color = "#ec5f6a" } }
 "diagnostic.warning" = { underline = { style = "curl", color = "#e6cc77" } }
 "diagnostic.info" = { underline = { style = "curl", color = "#6db3c2" } }
 "diagnostic.hint" = { underline = { style = "curl", color = "#7d857c" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 
-"error" = { fg = "#e05561" }
+"error" = { fg = "#ec5f6a" }
 "warning" = { fg = "#e6cc77" }
 "info" = { fg = "#6db3c2" }
 "hint" = { fg = "#7d857c" }

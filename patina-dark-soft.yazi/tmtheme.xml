@@ -20,7 +20,7 @@
         <key>lineHighlight</key>
         <string>#22222288</string>
         <key>selection</key>
-        <string>#4a8a6e55</string>
+        <string>#4f907355</string>
         <key>gutterForeground</key>
         <string>#4e4e4e</string>
       </dict>
@@ -108,7 +108,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#4a8a6e</string>
+        <string>#4f9073</string>
       </dict>
     </dict>
 
@@ -156,7 +156,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#4a8a6e</string>
+        <string>#4f9073</string>
       </dict>
     </dict>
 
@@ -252,7 +252,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#787878</string>
+        <string>#858584</string>
       </dict>
     </dict>
 
@@ -352,7 +352,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#4a8a6e</string>
+        <string>#4f9073</string>
       </dict>
     </dict>
 
@@ -388,7 +388,7 @@
       <key>settings</key>
       <dict>
         <key>foreground</key>
-        <string>#d05060</string>
+        <string>#d85867</string>
       </dict>
     </dict>
   </array>

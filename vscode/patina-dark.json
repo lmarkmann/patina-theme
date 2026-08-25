@@ -184,17 +184,17 @@
     "settings.modifiedItemIndicator": "#4d9375",
     "welcomePage.buttonBackground": "#1a1a1a",
     "welcomePage.buttonHoverBackground": "#3a3a3a",
-    "problemsErrorIcon.foreground": "#e05561",
+    "problemsErrorIcon.foreground": "#ec5f6a",
     "problemsWarningIcon.foreground": "#e6cc77",
     "problemsInfoIcon.foreground": "#6db3c2",
-    "editorError.foreground": "#e05561",
+    "editorError.foreground": "#ec5f6a",
     "editorWarning.foreground": "#e6cc77",
     "editorInfo.foreground": "#6db3c2",
     "editorHint.foreground": "#7d857c",
     "menu.separatorBackground": "#2e2e2e",
     "minimap.findMatchHighlight": "#4d937560",
     "minimap.selectionHighlight": "#3a3a3a",
-    "minimap.errorHighlight": "#e05561",
+    "minimap.errorHighlight": "#ec5f6a",
     "minimap.warningHighlight": "#e6cc77",
     "list.focusForeground": "#dbd7ca",
     "tab.hoverForeground": "#dbd7ca",
@@ -745,34 +745,34 @@
       "scope": "invalid.broken",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#e05561"
+        "foreground": "#ec5f6a"
       }
     },
     {
       "scope": "invalid.deprecated",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#e05561"
+        "foreground": "#ec5f6a"
       }
     },
     {
       "scope": "invalid.illegal",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#e05561"
+        "foreground": "#ec5f6a"
       }
     },
     {
       "scope": "invalid.unimplemented",
       "settings": {
         "fontStyle": "italic",
-        "foreground": "#e05561"
+        "foreground": "#ec5f6a"
       }
     },
     {
       "scope": "message.error",
       "settings": {
-        "foreground": "#e05561"
+        "foreground": "#ec5f6a"
       }
     },
     {
