@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.4.0
+
+- **Colours now live in `palette/*.toml`**, one file per variant, and every theme file is generated from them by `tools/generate.py`. Previously `generate.py`'s `PALETTES` dict was documented as the source of truth but had not been updated since 1.2.2, so three targets shipped colours from before the 1.3.0 retune.
+- **Fix Ghostty, iTerm2 and Helix**, which were emitting pre-1.3.0 colours. Dark Soft's Ghostty ANSI 0 was `#2e2e2e` against `#333333` in VS Code and Zed; Helix's `ui.text` was `#dbd7ca` against `#c8c4b8`. The terminal targets now read their ANSI slots through the same mapping VS Code uses, so they cannot diverge again. VS Code and Zed are unchanged: both regenerate byte for byte.
+- **Add Yazi flavors** for all six variants, installable with `ya pkg add lmarkmann/patina-theme:patina-dark-soft`. This replaces the standalone `patina-dark-soft.yazi` repo, which carried only one variant.
+- Re-render the previews in [Input](https://input.djr.com/), with a Rust sample that exercises eight syntax colours instead of five.
+- Re-enable the Zed publish workflow on tags now that [zed-industries/extensions#6470](https://github.com/zed-industries/extensions/pull/6470) has merged.
+- Add a CI check that regenerates every target and fails if anything drifts from the palette.
+
 ## 1.3.1
 
 - README: remove the duplicate hero preview and arrange the six variant previews as a named three-column grid.
