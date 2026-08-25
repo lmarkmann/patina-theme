@@ -115,12 +115,17 @@ def check_panel(tok):
     failed = []
     if muted < PANEL_FLOOR:
         failed.append(f"fg_muted is {muted:.2f}:1 on the panel, floor is {PANEL_FLOOR}")
-    for name in ("ignored", "fg_inactive"):
-        if ratio(tok[name], surface) >= muted:
-            failed.append(
-                f"{name} ({ratio(tok[name], surface):.2f}) is not dimmer than "
-                f"fg_muted ({muted:.2f})"
-            )
+    # Ignored files must visibly drop away, not merely rank below.
+    if muted / ratio(tok["ignored"], surface) < 1.8:
+        failed.append(
+            f"ignored ({ratio(tok['ignored'], surface):.2f}) recedes only "
+            f"{muted / ratio(tok['ignored'], surface):.2f}x from fg_muted ({muted:.2f}); want 1.8x"
+        )
+    if ratio(tok["fg_inactive"], surface) >= muted:
+        failed.append(
+            f"fg_inactive ({ratio(tok['fg_inactive'], surface):.2f}) is not dimmer "
+            f"than fg_muted ({muted:.2f})"
+        )
     return muted, failed
 
 

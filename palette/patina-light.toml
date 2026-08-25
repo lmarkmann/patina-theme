@@ -33,7 +33,7 @@ fg_faint = "#8a8a80"
 linenr = "#9a988e"
 gutter = "#9a988e"
 inlay = "#8a8a80"
-ignored = "#73715f"
+ignored = "#8b8977"
 
 [accent]
 accent = "#33644d"
