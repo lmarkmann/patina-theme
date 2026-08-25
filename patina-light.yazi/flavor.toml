@@ -1,0 +1,123 @@
+# Patina Light, a Yazi flavor.
+# Ported from the Patina editor theme (Light variant).
+#
+# bg          #ddd7c4   surface     #d2ccb9   tab bg   #d9d3c0
+# fg          #393a34   muted       #8a8a80   border   #8a8a80
+# green       #33644d   primary accent
+# green soft  #2f5418
+# cyan        #2a6361
+# rose        #854b3f
+# yellow      #bda437
+# red         #8b4646
+# blue/info   #35616d
+# orange      #7f5031
+# hint        #5e7052   error    #a23333
+
+[mgr]
+marker_copied   = { fg = "#33644d", bg = "#33644d" }
+marker_cut      = { fg = "#8b4646", bg = "#8b4646" }
+marker_marked   = { fg = "#2a6361", bg = "#2a6361" }
+marker_selected = { fg = "#bda437", bg = "#bda437" }
+
+cwd = { fg = "#2a6361" }
+
+find_keyword  = { fg = "#bda437", bg = "#ddd7c4" }
+find_position = {}
+
+count_copied   = { fg = "#ddd7c4", bg = "#33644d" }
+count_cut      = { fg = "#ddd7c4", bg = "#8b4646" }
+count_selected = { fg = "#ddd7c4", bg = "#bda437" }
+
+border_symbol = "│"
+border_style  = { fg = "#8a8a80" }
+
+[indicator]
+parent  = { reversed = true }
+current = { reversed = true }
+preview = { reversed = true }
+
+[tabs]
+active   = { fg = "#ddd7c4", bg = "#33644d" }
+inactive = { fg = "#2f5418", bg = "#d2ccb9" }
+
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+[mode]
+normal_main = { fg = "#ddd7c4", bg = "#33644d" }
+normal_alt  = { fg = "#2f5418", bg = "#d2ccb9" }
+select_main = { fg = "#ddd7c4", bg = "#bda437" }
+select_alt  = { fg = "#bda437", bg = "#d2ccb9" }
+unset_main  = { fg = "#ddd7c4", bg = "#854b3f" }
+unset_alt   = { fg = "#854b3f", bg = "#d2ccb9" }
+
+[status]
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+overall   = { fg = "#393a34", bg = "#d2ccb9" }
+
+progress_label  = { fg = "#33644d", bold = true }
+progress_normal = { fg = "#b5b0a0", bg = "#ddd7c4" }
+progress_error  = { fg = "#a23333", bg = "#ddd7c4" }
+
+perm_type  = { fg = "#33644d" }
+perm_read  = { fg = "#bda437" }
+perm_write = { fg = "#8b4646" }
+perm_exec  = { fg = "#2a6361" }
+perm_sep   = { fg = "#8a8a80" }
+
+[pick]
+border   = { fg = "#33644d" }
+active   = { fg = "#bda437", bold = true }
+inactive = {}
+
+[input]
+border   = { fg = "#33644d" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[completion]
+border   = { fg = "#33644d" }
+active   = { reversed = true }
+inactive = {}
+
+[tasks]
+border  = { fg = "#33644d" }
+title   = {}
+hovered = { fg = "#bda437" }
+
+[which]
+cols            = 2
+separator       = " - "
+separator_style = { fg = "#8a8a80" }
+mask            = { bg = "#ddd7c4" }
+rest            = { fg = "#8a8a80" }
+cand            = { fg = "#33644d" }
+desc            = { fg = "#5e7052" }
+
+[help]
+on      = { fg = "#2a6361" }
+run     = { fg = "#33644d" }
+desc    = {}
+hovered = { reversed = true, bold = true }
+footer  = { fg = "#ddd7c4", bg = "#393a34" }
+
+[notify]
+title_info  = { fg = "#33644d" }
+title_warn  = { fg = "#bda437" }
+title_error = { fg = "#a23333" }
+
+[filetype]
+rules = [
+    { mime = "image/*", fg = "#bda437" },
+    { mime = "{audio,video}/*", fg = "#854b3f" },
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#8b4646" },
+    { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#2a6361" },
+
+    { url = "*", is = "orphan", fg = "#a23333" },
+    { url = "*", is = "exec", fg = "#2f5418" },
+
+    { url = "*", fg = "#393a34" },
+    { url = "*/", fg = "#33644d" },
+]

@@ -1,0 +1,123 @@
+# Patina Dark Soft, a Yazi flavor.
+# Ported from the Patina editor theme (Dark Soft variant).
+#
+# bg          #1a1a1a   surface     #222222   tab bg   #1e1e1e
+# fg          #c8c4b8   muted       #4a4a4a   border   #4e4e4e
+# green       #4a8a6e   primary accent
+# green soft  #93b072
+# cyan        #5a9e9c
+# rose        #c08a7d
+# yellow      #d4bf6e
+# red         #b86e6e
+# blue/info   #65a8b5
+# orange      #af8d62
+# hint        #778073   error    #d05060
+
+[mgr]
+marker_copied   = { fg = "#4a8a6e", bg = "#4a8a6e" }
+marker_cut      = { fg = "#b86e6e", bg = "#b86e6e" }
+marker_marked   = { fg = "#5a9e9c", bg = "#5a9e9c" }
+marker_selected = { fg = "#d4bf6e", bg = "#d4bf6e" }
+
+cwd = { fg = "#5a9e9c" }
+
+find_keyword  = { fg = "#d4bf6e", bg = "#1a1a1a" }
+find_position = {}
+
+count_copied   = { fg = "#1a1a1a", bg = "#4a8a6e" }
+count_cut      = { fg = "#1a1a1a", bg = "#b86e6e" }
+count_selected = { fg = "#1a1a1a", bg = "#d4bf6e" }
+
+border_symbol = "│"
+border_style  = { fg = "#4e4e4e" }
+
+[indicator]
+parent  = { reversed = true }
+current = { reversed = true }
+preview = { reversed = true }
+
+[tabs]
+active   = { fg = "#1a1a1a", bg = "#4a8a6e" }
+inactive = { fg = "#93b072", bg = "#222222" }
+
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+[mode]
+normal_main = { fg = "#1a1a1a", bg = "#4a8a6e" }
+normal_alt  = { fg = "#93b072", bg = "#222222" }
+select_main = { fg = "#1a1a1a", bg = "#d4bf6e" }
+select_alt  = { fg = "#d4bf6e", bg = "#222222" }
+unset_main  = { fg = "#1a1a1a", bg = "#c08a7d" }
+unset_alt   = { fg = "#c08a7d", bg = "#222222" }
+
+[status]
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+overall   = { fg = "#c8c4b8", bg = "#222222" }
+
+progress_label  = { fg = "#4a8a6e", bold = true }
+progress_normal = { fg = "#3d3d3d", bg = "#1a1a1a" }
+progress_error  = { fg = "#d05060", bg = "#1a1a1a" }
+
+perm_type  = { fg = "#4a8a6e" }
+perm_read  = { fg = "#d4bf6e" }
+perm_write = { fg = "#b86e6e" }
+perm_exec  = { fg = "#5a9e9c" }
+perm_sep   = { fg = "#4a4a4a" }
+
+[pick]
+border   = { fg = "#4a8a6e" }
+active   = { fg = "#d4bf6e", bold = true }
+inactive = {}
+
+[input]
+border   = { fg = "#4a8a6e" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[completion]
+border   = { fg = "#4a8a6e" }
+active   = { reversed = true }
+inactive = {}
+
+[tasks]
+border  = { fg = "#4a8a6e" }
+title   = {}
+hovered = { fg = "#d4bf6e" }
+
+[which]
+cols            = 2
+separator       = " - "
+separator_style = { fg = "#4a4a4a" }
+mask            = { bg = "#1a1a1a" }
+rest            = { fg = "#4a4a4a" }
+cand            = { fg = "#4a8a6e" }
+desc            = { fg = "#778073" }
+
+[help]
+on      = { fg = "#5a9e9c" }
+run     = { fg = "#4a8a6e" }
+desc    = {}
+hovered = { reversed = true, bold = true }
+footer  = { fg = "#1a1a1a", bg = "#c8c4b8" }
+
+[notify]
+title_info  = { fg = "#4a8a6e" }
+title_warn  = { fg = "#d4bf6e" }
+title_error = { fg = "#d05060" }
+
+[filetype]
+rules = [
+    { mime = "image/*", fg = "#d4bf6e" },
+    { mime = "{audio,video}/*", fg = "#c08a7d" },
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#b86e6e" },
+    { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#5a9e9c" },
+
+    { url = "*", is = "orphan", fg = "#d05060" },
+    { url = "*", is = "exec", fg = "#93b072" },
+
+    { url = "*", fg = "#c8c4b8" },
+    { url = "*/", fg = "#4a8a6e" },
+]

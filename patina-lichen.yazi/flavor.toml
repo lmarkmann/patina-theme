@@ -1,0 +1,123 @@
+# Patina Lichen, a Yazi flavor.
+# Ported from the Patina editor theme (Lichen variant).
+#
+# bg          #cdd1c6   surface     #c2c6bb   tab bg   #c9cdc2
+# fg          #393a34   muted       #80857a   border   #80857a
+# green       #33644d   primary accent
+# green soft  #426338
+# cyan        #2a6361
+# rose        #854b3f
+# yellow      #bda437
+# red         #8b4646
+# blue/info   #35616d
+# orange      #7f5031
+# hint        #5f6a5f   error    #a23333
+
+[mgr]
+marker_copied   = { fg = "#33644d", bg = "#33644d" }
+marker_cut      = { fg = "#8b4646", bg = "#8b4646" }
+marker_marked   = { fg = "#2a6361", bg = "#2a6361" }
+marker_selected = { fg = "#bda437", bg = "#bda437" }
+
+cwd = { fg = "#2a6361" }
+
+find_keyword  = { fg = "#bda437", bg = "#cdd1c6" }
+find_position = {}
+
+count_copied   = { fg = "#cdd1c6", bg = "#33644d" }
+count_cut      = { fg = "#cdd1c6", bg = "#8b4646" }
+count_selected = { fg = "#cdd1c6", bg = "#bda437" }
+
+border_symbol = "│"
+border_style  = { fg = "#80857a" }
+
+[indicator]
+parent  = { reversed = true }
+current = { reversed = true }
+preview = { reversed = true }
+
+[tabs]
+active   = { fg = "#cdd1c6", bg = "#33644d" }
+inactive = { fg = "#426338", bg = "#c2c6bb" }
+
+sep_inner = { open = "", close = "" }
+sep_outer = { open = "", close = "" }
+
+[mode]
+normal_main = { fg = "#cdd1c6", bg = "#33644d" }
+normal_alt  = { fg = "#426338", bg = "#c2c6bb" }
+select_main = { fg = "#cdd1c6", bg = "#bda437" }
+select_alt  = { fg = "#bda437", bg = "#c2c6bb" }
+unset_main  = { fg = "#cdd1c6", bg = "#854b3f" }
+unset_alt   = { fg = "#854b3f", bg = "#c2c6bb" }
+
+[status]
+sep_left  = { open = "", close = "" }
+sep_right = { open = "", close = "" }
+overall   = { fg = "#393a34", bg = "#c2c6bb" }
+
+progress_label  = { fg = "#33644d", bold = true }
+progress_normal = { fg = "#a7ada0", bg = "#cdd1c6" }
+progress_error  = { fg = "#a23333", bg = "#cdd1c6" }
+
+perm_type  = { fg = "#33644d" }
+perm_read  = { fg = "#bda437" }
+perm_write = { fg = "#8b4646" }
+perm_exec  = { fg = "#2a6361" }
+perm_sep   = { fg = "#80857a" }
+
+[pick]
+border   = { fg = "#33644d" }
+active   = { fg = "#bda437", bold = true }
+inactive = {}
+
+[input]
+border   = { fg = "#33644d" }
+title    = {}
+value    = {}
+selected = { reversed = true }
+
+[completion]
+border   = { fg = "#33644d" }
+active   = { reversed = true }
+inactive = {}
+
+[tasks]
+border  = { fg = "#33644d" }
+title   = {}
+hovered = { fg = "#bda437" }
+
+[which]
+cols            = 2
+separator       = " - "
+separator_style = { fg = "#80857a" }
+mask            = { bg = "#cdd1c6" }
+rest            = { fg = "#80857a" }
+cand            = { fg = "#33644d" }
+desc            = { fg = "#5f6a5f" }
+
+[help]
+on      = { fg = "#2a6361" }
+run     = { fg = "#33644d" }
+desc    = {}
+hovered = { reversed = true, bold = true }
+footer  = { fg = "#cdd1c6", bg = "#393a34" }
+
+[notify]
+title_info  = { fg = "#33644d" }
+title_warn  = { fg = "#bda437" }
+title_error = { fg = "#a23333" }
+
+[filetype]
+rules = [
+    { mime = "image/*", fg = "#bda437" },
+    { mime = "{audio,video}/*", fg = "#854b3f" },
+    { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#8b4646" },
+    { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#2a6361" },
+
+    { url = "*", is = "orphan", fg = "#a23333" },
+    { url = "*", is = "exec", fg = "#426338" },
+
+    { url = "*", fg = "#393a34" },
+    { url = "*/", fg = "#33644d" },
+]
