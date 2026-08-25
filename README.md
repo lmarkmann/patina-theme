@@ -39,17 +39,30 @@ Also published on [Open VSX](https://open-vsx.org/extension/lmarkmann/patina-the
 
 ## Also available for
 
-| Editor / Terminal                  | Files                           |
-| ---------------------------------- | ------------------------------- |
-| [Ghostty](https://ghostty.org/)    | `terminals/ghostty/`            |
-| [Helix](https://helix-editor.com/) | `helix-editor/`                 |
-| [iTerm2](https://iterm2.com/)      | `contrib/iterm2-color-schemes/` |
+| Editor / Terminal                          | Files                           |
+| ------------------------------------------ | ------------------------------- |
+| [Ghostty](https://ghostty.org/)            | `terminals/ghostty/`            |
+| [Yazi](https://github.com/sxyazi/yazi)     | `patina-<variant>.yazi/`        |
+| [Helix](https://helix-editor.com/)         | `helix-editor/`                 |
+| [iTerm2](https://iterm2.com/)              | `contrib/iterm2-color-schemes/` |
 
-Copy the relevant files into your editor or terminal config directory.
+Copy the relevant files into your editor or terminal config directory. Yazi has a package manager, so it installs itself:
 
-PRs porting Patina to other apps are welcome. Use the `PALETTES` dict in `generate.py` as the source of truth for colors; community ports live here but aren't official release targets.
+```sh
+ya pkg add lmarkmann/patina-theme:patina-dark-soft
+```
 
-I also recommend using the [Input Font](https://input.djr.com/) together with the themes.
+Then in `~/.config/yazi/theme.toml`:
+
+```toml
+[flavor]
+dark = "patina-dark-soft"
+light = "patina-light"
+```
+
+PRs porting Patina to other apps are welcome. The colors live in `palette/*.toml`, one file per variant; everything else in this repo is generated from them by `tools/generate.py`, so please don't hand-edit a theme file.
+
+I also recommend the [Input Font](https://input.djr.com/) together with the themes; the previews above are set in it.
 
 ## License
 
