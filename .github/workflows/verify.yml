@@ -1,0 +1,37 @@
+name: Verify generated files
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  generated:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: python3 tools/generate.py
+
+      # Every theme file is derived from palette/*.toml. If this fails, someone
+      # hand-edited a generated file or forgot to run `just generate`.
+      - name: Generated files match the palette
+        run: git diff --exit-code -- vscode themes helix-editor terminals contrib 'patina-*.yazi'
+
+      - name: Yazi flavors parse
+        run: |
+          python3 - <<'PY'
+          import glob, plistlib, tomllib
+          for f in sorted(glob.glob("patina-*.yazi/flavor.toml")):
+              tomllib.load(open(f, "rb"))
+          for f in sorted(glob.glob("patina-*.yazi/tmtheme.xml")):
+              plistlib.load(open(f, "rb"))
+          print("ok")
+          PY
