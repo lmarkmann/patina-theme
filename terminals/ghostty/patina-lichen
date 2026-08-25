@@ -1,25 +1,25 @@
 # Patina Lichen theme for Ghostty
 
 palette = 0=#393a34
-palette = 1=#8b4646
-palette = 2=#33644d
-palette = 3=#bda437
-palette = 4=#35616d
-palette = 5=#854b3f
-palette = 6=#2a6361
-palette = 7=#cdd1c6
+palette = 1=#8c4646
+palette = 2=#34644d
+palette = 3=#7a6821
+palette = 4=#36616e
+palette = 5=#864b3f
+palette = 6=#2b6361
+palette = 7=#d5dace
 palette = 8=#80857a
-palette = 9=#8b4646
-palette = 10=#33644d
-palette = 11=#bda437
-palette = 12=#35616d
-palette = 13=#854b3f
-palette = 14=#2a6361
+palette = 9=#8c4646
+palette = 10=#34644d
+palette = 11=#7a6821
+palette = 12=#36616e
+palette = 13=#864b3f
+palette = 14=#2b6361
 palette = 15=#393a34
 
-background = #cdd1c6
+background = #d5dace
 foreground = #393a34
 cursor-color = #393a34
-cursor-text = #cdd1c6
-selection-background = #b4b9ac
+cursor-text = #d5dace
+selection-background = #bcc1b4
 selection-foreground = #393a34

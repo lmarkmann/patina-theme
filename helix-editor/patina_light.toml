@@ -88,12 +88,12 @@
 "diff.delta" = { fg = "#6e5831" }
 
 "diagnostic.error" = { underline = { style = "curl", color = "#a23333" } }
-"diagnostic.warning" = { underline = { style = "curl", color = "#bda437" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "#796820" } }
 "diagnostic.info" = { underline = { style = "curl", color = "#35616d" } }
 "diagnostic.hint" = { underline = { style = "curl", color = "#666e65" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 
 "error" = { fg = "#a23333" }
-"warning" = { fg = "#bda437" }
+"warning" = { fg = "#796820" }
 "info" = { fg = "#35616d" }
 "hint" = { fg = "#666e65" }

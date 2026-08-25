@@ -5,7 +5,7 @@ A [Yazi](https://github.com/sxyazi/yazi) flavor from the **Patina** theme,
 
 ![preview](./preview.png)
 
-Background `#cdd1c6`, foreground `#393a34`, accent `#33644d`.
+Background `#d5dace`, foreground `#393a34`, accent `#34644d`.
 
 ## Install
 

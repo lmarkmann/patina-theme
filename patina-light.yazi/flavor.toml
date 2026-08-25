@@ -7,7 +7,7 @@
 # green soft  #2f5418
 # cyan        #2a6361
 # rose        #854b3f
-# yellow      #bda437
+# yellow      #796820
 # red         #8b4646
 # blue/info   #35616d
 # orange      #7f5031
@@ -17,16 +17,16 @@
 marker_copied   = { fg = "#33644d", bg = "#33644d" }
 marker_cut      = { fg = "#8b4646", bg = "#8b4646" }
 marker_marked   = { fg = "#2a6361", bg = "#2a6361" }
-marker_selected = { fg = "#bda437", bg = "#bda437" }
+marker_selected = { fg = "#796820", bg = "#796820" }
 
 cwd = { fg = "#2a6361" }
 
-find_keyword  = { fg = "#bda437", bg = "#ddd7c4" }
+find_keyword  = { fg = "#796820", bg = "#ddd7c4" }
 find_position = {}
 
 count_copied   = { fg = "#ddd7c4", bg = "#33644d" }
 count_cut      = { fg = "#ddd7c4", bg = "#8b4646" }
-count_selected = { fg = "#ddd7c4", bg = "#bda437" }
+count_selected = { fg = "#ddd7c4", bg = "#796820" }
 
 border_symbol = "│"
 border_style  = { fg = "#8a8a80" }
@@ -46,8 +46,8 @@ sep_outer = { open = "", close = "" }
 [mode]
 normal_main = { fg = "#ddd7c4", bg = "#33644d" }
 normal_alt  = { fg = "#2f5418", bg = "#d2ccb9" }
-select_main = { fg = "#ddd7c4", bg = "#bda437" }
-select_alt  = { fg = "#bda437", bg = "#d2ccb9" }
+select_main = { fg = "#ddd7c4", bg = "#796820" }
+select_alt  = { fg = "#796820", bg = "#d2ccb9" }
 unset_main  = { fg = "#ddd7c4", bg = "#854b3f" }
 unset_alt   = { fg = "#854b3f", bg = "#d2ccb9" }
 
@@ -61,14 +61,14 @@ progress_normal = { fg = "#b5b0a0", bg = "#ddd7c4" }
 progress_error  = { fg = "#a23333", bg = "#ddd7c4" }
 
 perm_type  = { fg = "#33644d" }
-perm_read  = { fg = "#bda437" }
+perm_read  = { fg = "#796820" }
 perm_write = { fg = "#8b4646" }
 perm_exec  = { fg = "#2a6361" }
 perm_sep   = { fg = "#8a8a80" }
 
 [pick]
 border   = { fg = "#33644d" }
-active   = { fg = "#bda437", bold = true }
+active   = { fg = "#796820", bold = true }
 inactive = {}
 
 [input]
@@ -85,7 +85,7 @@ inactive = {}
 [tasks]
 border  = { fg = "#33644d" }
 title   = {}
-hovered = { fg = "#bda437" }
+hovered = { fg = "#796820" }
 
 [which]
 cols            = 2
@@ -105,12 +105,12 @@ footer  = { fg = "#ddd7c4", bg = "#393a34" }
 
 [notify]
 title_info  = { fg = "#33644d" }
-title_warn  = { fg = "#bda437" }
+title_warn  = { fg = "#796820" }
 title_error = { fg = "#a23333" }
 
 [filetype]
 rules = [
-    { mime = "image/*", fg = "#bda437" },
+    { mime = "image/*", fg = "#796820" },
     { mime = "{audio,video}/*", fg = "#854b3f" },
     { mime = "application/{zip,rar,7z*,tar,gzip,xz,zstd,bzip*,lzma,compress,archive,cpio,arj,xar,ms-cab*}", fg = "#8b4646" },
     { mime = "application/{pdf,doc,rtf,vnd.*}", fg = "#2a6361" },
