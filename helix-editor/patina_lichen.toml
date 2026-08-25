@@ -5,12 +5,12 @@
 "ui.cursor.primary" = { fg = "#cdd1c6", bg = "#393a34" }
 "ui.cursor.match" = { fg = "#cdd1c6", bg = "#2a6361" }
 "ui.selection" = { bg = "#bcc1b6" }
-"ui.selection.primary" = { bg = "#a7ada0" }
+"ui.selection.primary" = { bg = "#b4b9ac" }
 "ui.linenr" = { fg = "#80857a" }
 "ui.linenr.selected" = { fg = "#393a34" }
 "ui.cursorline.primary" = { bg = "#c2c6bb" }
 "ui.statusline" = { fg = "#393a34", bg = "#c2c6bb" }
-"ui.statusline.inactive" = { fg = "#80857a", bg = "#c5c9be" }
+"ui.statusline.inactive" = { fg = "#80857a", bg = "#c9cdc2" }
 "ui.statusline.normal" = { fg = "#cdd1c6", bg = "#33644d" }
 "ui.statusline.insert" = { fg = "#cdd1c6", bg = "#854b3f" }
 "ui.statusline.select" = { fg = "#cdd1c6", bg = "#2a6361" }
@@ -24,7 +24,7 @@
 "ui.virtual.ruler" = { bg = "#c2c6bb" }
 "ui.virtual.indent-guide" = { fg = "#b4b9ac" }
 "ui.virtual.inlay-hint" = { fg = "#80857a" }
-"ui.bufferline" = { fg = "#80857a", bg = "#c5c9be" }
+"ui.bufferline" = { fg = "#80857a", bg = "#c9cdc2" }
 "ui.bufferline.active" = { fg = "#393a34", bg = "#cdd1c6" }
 
 "comment" = { fg = "#5f6a5f" }
@@ -48,7 +48,7 @@
 "type.builtin" = { fg = "#2a6361" }
 "type.enum.variant" = { fg = "#2a6361" }
 "constructor" = { fg = "#2a6361" }
-"constant" = { fg = "#854b3f" }
+"constant" = { fg = "#7f5031" }
 "constant.numeric" = { fg = "#2e645d" }
 "constant.character" = { fg = "#854b3f" }
 "constant.character.escape" = { fg = "#8b4646" }
@@ -88,12 +88,12 @@
 "diff.delta" = { fg = "#615c49" }
 
 "diagnostic.error" = { underline = { style = "curl", color = "#a23333" } }
-"diagnostic.warning" = { underline = { style = "curl", color = "#7f5031" } }
+"diagnostic.warning" = { underline = { style = "curl", color = "#bda437" } }
 "diagnostic.info" = { underline = { style = "curl", color = "#35616d" } }
 "diagnostic.hint" = { underline = { style = "curl", color = "#5f6a5f" } }
 "diagnostic.unnecessary" = { modifiers = ["dim"] }
 
 "error" = { fg = "#a23333" }
-"warning" = { fg = "#7f5031" }
+"warning" = { fg = "#bda437" }
 "info" = { fg = "#35616d" }
 "hint" = { fg = "#5f6a5f" }
