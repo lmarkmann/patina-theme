@@ -9,6 +9,17 @@
 - Re-enable the Zed publish workflow on tags now that [zed-industries/extensions#6470](https://github.com/zed-industries/extensions/pull/6470) has merged.
 - Add a CI check that regenerates every target and fails if anything drifts from the palette.
 
+### Colour corrections
+
+- **Sidebar hierarchy.** Zed's project panel draws ordinary entries in `text.muted` and git-status entries in their status colours. `text.muted` resolved to a token sitting at 1.75-2.39:1 against the panel, while `ignored` sat at 2.88-3.54, so tracked files rendered dimmer than ignored and untracked ones. The muted ink is split in two: `fg_muted` at 4.5:1 for text that is read, `fg_inactive` at 3.0:1 for disabled and placeholder. `ignored` drops to 2.2:1 so ignored paths recede by about 2x rather than 1.3x.
+- **Rebuild Patina Lichen.** It reused Light's accent values on a darker ground, leaving every role about 0.35 below its Light counterpart, and ten roles had collapsed into greys or onto their neighbours: `string`, `string_plain`, `operator`, `operator_relational`, `regexp_quantifier`, `attribute`, `variable`, `olive`, `conflict` and `hint`. Strings and operators were the same colour. The ground moves `#cdd1c6` to `#d5dace` and every chromatic role now takes Light's hue and chroma with lightness solved for Lichen's own ground.
+- **Retune yellow in the three light variants.** It was the one role never brought into the 1.3.0 retune, sitting at 1.6-2.2:1 where every sibling accent was tuned to roughly 4.75:1. It now clears 3.8:1.
+- **Picker ramp parity.** Hover is now 5 L\* from its surface, selected 9.5, active 14, in every variant except Dark, which keeps a wider spread. Moss was at 2.5 L\* and Light at 2.9, the same imperceptible hover fixed in 1.2.2. `quickInputList.focusBackground` is reclassified as a selection rather than a hover.
+- **Error salience.** An error must be at least as visible as ordinary red; Moss's was dimmer than its own red (3.78 against 4.69).
+- **Punctuation at AA.** `punctuation` and `operator_relational` sat at 3.94:1 in Dark Soft and Moss against 4.7-4.8 in the light variants.
+- **Dark Soft's primary accent** was 4.27:1, the dimmest colour in its own variant, while carrying buttons, links and the activity-bar indicator. Now 4.62.
+- `tools/contrast.py` gates all of the above: WCAG floors, the surface-ramp deltas, and the panel hierarchy.
+
 ## 1.3.1
 
 - README: remove the duplicate hero preview and arrange the six variant previews as a named three-column grid.
