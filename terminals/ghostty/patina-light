@@ -1,5 +1,8 @@
 # Patina Light theme for Ghostty
 
+# Light bg: invert the generated 256 ramp so palette apps stay readable.
+palette-harmonious = true
+
 palette = 0=#393a34
 palette = 1=#8b4646
 palette = 2=#33644d
@@ -23,3 +26,7 @@ cursor-color = #393a34
 cursor-text = #ddd7c4
 selection-background = #c2bdad
 selection-foreground = #393a34
+search-background = #c4c6b3
+search-foreground = #393a34
+search-selected-background = #33644d
+search-selected-foreground = #ddd7c4

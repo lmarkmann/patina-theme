@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- **Ghostty scrollback search colours.** Every variant now sets `search-*`, so Ghostty 1.3's search no longer falls back to its own colours. Matches use the find-match highlight Zed and VS Code already use, flattened onto the ground because Ghostty takes no alpha; the current match is the accent with ground-coloured text, 4.5:1 or better in all six variants.
+- **`palette-harmonious` for the light variants.** Light, Lichen and Stellar invert the 256-colour ramp Ghostty generates with `palette-generate`, so palette-based apps stay readable on a light ground.
+
 ## 1.4.0
 
 - **Colours now live in `palette/*.toml`**, one file per variant, and every theme file is generated from them by `tools/generate.py`. Previously `generate.py`'s `PALETTES` dict was documented as the source of truth but had not been updated since 1.2.2, so three targets shipped colours from before the 1.3.0 retune.

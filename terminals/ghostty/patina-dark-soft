@@ -23,3 +23,7 @@ cursor-color = #c8c4b8
 cursor-text = #1a1a1a
 selection-background = #2e2e2e
 selection-foreground = #c8c4b8
+search-background = #25332c
+search-foreground = #c8c4b8
+search-selected-background = #4f9073
+search-selected-foreground = #1a1a1a

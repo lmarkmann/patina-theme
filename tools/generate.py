@@ -140,16 +140,36 @@ def terminal_palette(tok, km):
         "background": look("editor.background"),
         "foreground": look("terminal.foreground"),
         "selection": look("terminal.selectionBackground"),
+        "search": flatten(
+            look("editor.findMatchHighlightBackground"), look("editor.background")
+        ),
+        "search_selected": tok["accent"],
     }
 
 
 def hex_to_floats(h):
     h = h.lstrip("#")[:6]
-    return tuple(int(h[i:i + 2], 16) / 255 for i in (0, 2, 4))
+    return tuple(int(h[i : i + 2], 16) / 255 for i in (0, 2, 4))
 
 
-def gen_ghostty(name, pal):
+def flatten(rgba, ground):
+    """Composite a #rrggbbaa colour onto an opaque ground, for targets without alpha."""
+    alpha = int(rgba[7:9], 16) / 255 if len(rgba) == 9 else 1.0
+    mixed = (
+        round((a * alpha + b * (1 - alpha)) * 255)
+        for a, b in zip(hex_to_floats(rgba), hex_to_floats(ground))
+    )
+    return "#" + "".join(f"{c:02x}" for c in mixed)
+
+
+def gen_ghostty(name, base, pal):
     lines = [f"# {name} theme for Ghostty", ""]
+    if base == "vs":
+        lines += [
+            "# Light bg: invert the generated 256 ramp so palette apps stay readable.",
+            "palette-harmonious = true",
+            "",
+        ]
     lines += [f"palette = {i}={c}" for i, c in enumerate(pal["ansi"])]
     lines += [
         "",
@@ -159,6 +179,10 @@ def gen_ghostty(name, pal):
         f"cursor-text = {pal['background']}",
         f"selection-background = {pal['selection']}",
         f"selection-foreground = {pal['foreground']}",
+        f"search-background = {pal['search']}",
+        f"search-foreground = {pal['foreground']}",
+        f"search-selected-background = {pal['search_selected']}",
+        f"search-selected-foreground = {pal['background']}",
     ]
     return "\n".join(lines) + "\n"
 
@@ -271,9 +295,9 @@ def main():
     )
 
     for variant in VARIANTS:
-        name, _, tok = palettes[variant]
+        name, base, tok = palettes[variant]
         pal = terminal_palette(tok, km)
-        write(BASE / "terminals" / "ghostty" / variant, gen_ghostty(name, pal))
+        write(BASE / "terminals" / "ghostty" / variant, gen_ghostty(name, base, pal))
         write(
             BASE / "contrib" / "iterm2-color-schemes" / f"{name}.itermcolors",
             gen_iterm2(pal),
@@ -299,9 +323,11 @@ def main():
         )
         write(flavor_dir / "LICENSE", (BASE / "LICENSE").read_text())
 
-    print(f"vscode/*.json ({len(VARIANTS)}), themes/patina.json, "
-          f"terminals/ghostty/*, contrib/iterm2-color-schemes/*, helix-editor/*, "
-          f"patina-*.yazi/*")
+    print(
+        f"vscode/*.json ({len(VARIANTS)}), themes/patina.json, "
+        f"terminals/ghostty/*, contrib/iterm2-color-schemes/*, helix-editor/*, "
+        f"patina-*.yazi/*"
+    )
 
 
 if __name__ == "__main__":

@@ -1,5 +1,8 @@
 # Patina Stellar theme for Ghostty
 
+# Light bg: invert the generated 256 ramp so palette apps stay readable.
+palette-harmonious = true
+
 palette = 0=#393a34
 palette = 1=#a45353
 palette = 2=#3e7a5e
@@ -23,3 +26,7 @@ cursor-color = #393a34
 cursor-text = #f5f2ed
 selection-background = #d5d2cb
 selection-foreground = #393a34
+search-background = #dae1d8
+search-foreground = #393a34
+search-selected-background = #3e7a5e
+search-selected-foreground = #f5f2ed
